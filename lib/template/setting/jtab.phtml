@@ -1,0 +1,7 @@
+<?php 
+$i = 0;
+foreach($content as $key => $val) :
+	$active = ( $state == $i ) ? "active" : "";
+	echo "<li class='$active'>{$key}</li>";
+	$i++;
+endforeach;

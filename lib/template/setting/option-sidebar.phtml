@@ -1,0 +1,41 @@
+<div class="setting-wrapper">
+	<div class="setting-option sidebar">	
+		<h4 class="setting-title"><?php echo $title ?> :</h4>				
+		<input type="text" class="sidebartitle"/>		
+		<span class="meta-description"><?php echo $description; ?></span>
+		<div class="sidebarsubmit">
+			<input type="button" class="btn" value="Create Sidebar"></input>
+		</div>	
+	</div>
+		
+	<div class="setting-option">
+		<h4 class="setting-title">
+			Sidebar list
+		</h4>		
+		<div class="sidebarres">
+			<ul>
+				<li class="sidebarresultitem">
+					<div class="sidebarresulttext">
+						<span class="sidebartitleitem"><?php echo JEG_DEFAULT_SIDEBAR; ?></span>
+					</div>					
+				</li>
+				<?php
+					if(!empty($value)) : 
+						foreach($value as $val) : 
+				?>
+				<li class="sidebarresultitem">
+					<div class="sidebarresulttext">
+						<span class="sidebartitleitem"><?php echo $val; ?></span>
+					</div>
+					<div class="sidebarresultdel">&nbsp;</div>
+				</li>
+				<?php 
+						endforeach; 
+					endif;
+				?>
+			</ul>
+		</div>
+		<input type="hidden" class="sidebarresult" name="<?php echo $id; ?>" id="<?php echo $id; ?>" value='<?php echo json_encode($value); ?>' />		
+	</div>	
+</div>
+

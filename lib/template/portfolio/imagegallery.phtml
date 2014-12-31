@@ -1,0 +1,83 @@
+<?php	
+	$jdata = new stdClass();
+	$jdata->galItemWidth 		= j_get_meta('gallery_item_width'		, 180 		, $postid);
+	$jdata->galItemHeight		= j_get_meta('gallery_item_height'		, 210		, $postid);
+	$jdata->itemTransition		= j_get_meta('gallery_item_transition', 'sequpfade'	, $postid);
+
+	$imglist = get_post_meta($postid, j_name('galery_image_gallery'), true);
+	$galleries = json_decode($imglist, true);
+	
+	if($use_paging == 0) {
+		$galcss = "animated";
+	} else {
+		$galcss = "notloaded";
+	}
+	
+	if(empty($galleries)) {
+		
+		$galleries = get_children(
+			array(	'order'			=> 'ASC', 
+				'orderby'			=>'menu_order', 
+				'post_parent' 		=> $postid, 
+				'post_type' 		=> 'attachment', 
+				'post_mime_type' 	=>'image'
+		));
+		
+		foreach($galleries as $image) :
+			$imagesize 		= j_get_image_size($image->guid);
+			$galwidth 		= 0;
+			
+			if($imagesize[0] > $imagesize[1]) {
+				$galwidth = ($jdata->galItemWidth *  2) + 10;
+			} else {
+				$galwidth = $jdata->galItemWidth;
+			}
+	?>
+		<div class="imggal <?php echo $galcss; ?> gal-<?php echo $image->ID; ?>" data-img="<?php echo $image->guid; ?>" data-title="<?php echo $image->post_title; ?>">
+			<figure>
+				<?php if($use_paging == 0) { ?>
+				<img alt="" src="<?php echo jeg_get_image($image->guid, '', $galwidth, $jdata->galItemHeight)?>"/>
+				<?php } else { ?>
+				<img alt="" data-src="<?php echo jeg_get_image($image->guid, '', $galwidth, $jdata->galItemHeight)?>"/>
+				<?php } ?>
+			</figure>
+			<div class="galoverlay"></div>
+		</div>
+	<?php 
+		endforeach; 
+	
+	} else {
+		
+		// pake builder image list
+		$i = 0;
+		
+		foreach ($galleries as $gallery) :
+			$image = wp_get_attachment_image_src($gallery['id'], 'full');
+			
+			$galwidth 		= 0;
+			$i++;
+			
+			if($image[1] > $image[2]) {
+				$galwidth = ($jdata->galItemWidth *  2) + 10;
+			} else {
+				$galwidth = $jdata->galItemWidth;
+			}
+			
+?>
+
+	<div class="imggal <?php echo $galcss; ?> gal-<?php echo $i; ?>" data-img="<?php echo $image[0]; ?>" data-title="<?php echo $gallery['title']; ?>">
+		<figure>
+			<?php if($use_paging == 0) { ?>
+			<img alt="" src="<?php echo jeg_get_image($image[0], '', $galwidth, $jdata->galItemHeight)?>"/>
+			<?php } else { ?>
+			<img alt="" data-src="<?php echo jeg_get_image($image[0], '', $galwidth, $jdata->galItemHeight)?>"/>
+			<?php } ?>				
+		</figure>
+		<div class="galoverlay"></div>
+	</div>
+
+<?php 
+		endforeach;
+	}
+
+?>

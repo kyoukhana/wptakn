@@ -1,0 +1,13 @@
+<div class="setting-option">	
+	<h4 class="setting-title"><?php echo $title ?> :</h4>		
+	<?php wp_editor($value, $id); ?>
+	<span class="meta-description"><?php echo $description; ?></span>	
+	<?php if(isset($help)) : ?>
+	<div class="moreinfo" title="More Info">&nbsp;</div>
+	<div class="help">
+		<div class="help-wrapper">
+			<?php echo $help; ?>
+		</div>
+	</div>
+	<?php endif; ?>
+</div>

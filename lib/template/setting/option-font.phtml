@@ -1,0 +1,91 @@
+<div class="setting-option font-option" data-id="<?php echo $id; ?>">	
+	<h4 class="setting-title"><?php echo $title ?>:</h4>
+	
+	<div class="fontblock">
+		<span class="fontspan"><strong>Google Font : </strong></span> 
+		<div class="fontview" contenteditable="true">
+			Write something here
+		</div>	
+		<select id="<?php echo $id; ?>" name="<?php echo $id; ?>[name]" class="fontselect">
+			<option></option>
+			<?php foreach ($option as $key => $val) : ?>
+				<option value="<?php echo $key; ?>"  <?php echo ( $value['name'] == $key ) ? "selected='selected'" : '' ?> >
+					<?php echo $val; ?>
+				</option>
+			<?php endforeach; ?>		
+		</select>	
+		<select class="fontvariant" name="<?php echo $id; ?>[variant]">
+			<option></option>
+			<?php 	
+				$allvariant = j_get_font_variant($value['name']);			
+				foreach ($allvariant as $key => $val) :
+					$choose =  ( $value['variant'] == $val ) ? "selected='selected'" : '';
+			?>
+				<option value="<?php echo $val; ?>"  <?php echo ( $value['variant'] == $val ) ? "selected='selected'" : '' ?> >
+					<?php echo $val; ?>
+				</option>
+			<?php endforeach; ?>
+		</select>
+	</div>
+	
+	<div class="fontblock ffblock">
+		<span class="fontspan"><strong>Font Face (Upload your own font) : </strong></span>		
+		<span class="fontspan">Font Family Name : </span>
+		<input 	type="text" 
+				name="<?php echo $id; ?>[face]" 
+				value="<?php echo isset($value['face']) ? $value['face'] : '' ?>" />
+		
+		
+		<?php
+			if(isset($value['fontface'])) {
+				$ff1 = 	$value['facefont'][0];
+				$ff2 = 	$value['facefont'][1];
+				$ff3 = 	$value['facefont'][2];
+				$ff4 = 	$value['facefont'][3];
+			} 
+		?>
+		<span class="fontspan">Font Uploader (EOT) : </span>		
+		<div class="uploadfile">
+			<input 	type="text" class="uploadtext"
+					name="<?php echo $id; ?>[facefont][0]"
+					value="<?php echo $ff1; ?>" />
+			<input type="button" value="Select File" class="selectfile" />
+		</div>
+		
+		<span class="fontspan">Font Uploader (WOFF) : </span>		
+		<div class="uploadfile">
+			<input 	type="text" class="uploadtext"
+					name="<?php echo $id; ?>[facefont][1]"
+					value="<?php echo $ff2; ?>" />
+			<input type="button" value="Select File" class="selectfile" />
+		</div>
+		
+		<span class="fontspan">Font Uploader (TTF): </span>		
+		<div class="uploadfile">
+			<input 	type="text" class="uploadtext"
+					name="<?php echo $id; ?>[facefont][2]"
+					value="<?php echo $ff3; ?>" />
+			<input type="button" value="Select File" class="selectfile" />
+		</div>
+		
+		<span class="fontspan">Font Uploader (SVG): </span>		
+		<div class="uploadfile">
+			<input 	type="text" class="uploadtext"
+					name="<?php echo $id; ?>[facefont][3]"
+					value="<?php echo $ff4; ?>" />
+			<input type="button" value="Select File" class="selectfile" />
+		</div>
+	</div>
+	<span class="meta-description">If you want to use your own font (Font Face), you need to empty / remove google font value</span>
+	<span class="meta-description">and for compability issues, its better if you are fill all option on font faces (EOT, WOFF, TTF & SVG)</span>		
+	<span class="meta-description"><?php echo $description; ?></span>
+	
+	<?php if(isset($help)) : ?>
+	<div class="moreinfo" title="More Info">&nbsp;</div>
+	<div class="help">
+		<div class="help-wrapper">
+			<?php echo $help; ?>
+		</div>
+	</div>
+	<?php endif; ?>
+</div>

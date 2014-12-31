@@ -1,0 +1,802 @@
+header .logo { 
+	top: <?php echo $logo_top_margin; ?>px;
+	margin-left: -<?php echo $logo_margin_left;?>px;
+	display: block;
+}
+
+<?php if ($logo_animation) : ?>
+header .logo:hover img{ 
+	-webkit-transition: all 0.8s ease-in;
+	-moz-transition: all 0.8s ease-in;
+	-o-transition: all 0.8s ease-in;
+	-ms-transition: all 0.8 ease-in;
+	-moz-transform: rotateY(360deg);
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);	
+	filter: progid : DXImageTransform.Microsoft.BasicImage ( rotation = 2 )
+}
+<?php endif; ?>
+
+header nav .navleft .navleft-wrapper {
+	margin-right: <?php echo $logo_margin_left + $nav_logo_gap; ?>px;
+}
+
+header nav .navright .navright-wrapper {
+	margin-left: <?php echo $logo_margin_left + $nav_logo_gap; ?>px;
+}
+
+header {
+	border-top-color:#<?php echo $web_head_line_color ?>;	
+}
+
+header .menu .bgmenu {
+	background: #<?php echo $menu_background ?>;
+}
+
+header nav a,header nav h3,header nav span {
+	color: #<?php echo $menu_text_color ?>;
+}
+
+.whitecolor h3,.whitecolor span {
+	color:  #<?php echo $menu_hover_text_color ?>;
+}
+
+header .submenu {
+	background: #<?php echo $submenu_background ?>;
+	border-top: 1px solid #<?php echo $submenu_border_color ?>;
+	border-bottom: 1px solid #<?php echo $submenu_border_color ?>;
+}
+
+header nav .submenu>li>a {
+	border-left: 1px solid #<?php echo $submenu_border_color ?>;	
+}
+
+header nav .submenu > li:last-child > a {	
+	border-right: 1px solid #<?php echo $submenu_border_color ?>;
+}
+
+header nav .submenu>li:hover {
+	background: #<?php echo $submenu_hover_background ?>;
+}
+
+header nav .submenu h3 {
+	color: #<?php echo $submenu_text_color ?>;
+}
+
+header nav .submenu li:hover>a>h3 {
+	color: #<?php echo $submenu_hover_text_color ?>;
+}
+
+
+<?php if ($submenu_arrow_light) : ?>
+header nav .haschild > a > div {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings.png);
+}
+<?php endif; ?>
+
+<?php if ($submenu_arrow_dark) : ?>
+header nav .haschild:hover > a > div {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings-white.png);
+}
+<?php endif; ?>
+
+header nav .submenu>li>a {
+	color: #<?php echo $submenu_border_color ?>;
+}
+
+<?php if ($header_background) : ?>
+header {
+	background-image: url("<?php echo $header_background ?>");
+}
+<?php endif; ?>
+
+<?php if ($nav_background) : ?>
+header nav .navright .menu > li {
+	background-image: url("<?php echo $nav_background ?>");
+}
+header nav .navleft .menu > li {
+	background-image: url("<?php echo $nav_background ?>");
+}
+<?php endif; ?>
+
+<?php if ($footer_background) : ?>
+footer {	
+	background-image: url("<?php echo $footer_background ?>");
+}
+<?php endif; ?>
+
+footer nav.foot-right li, footer nav.foot-left li {
+	border-left: 1px solid #<?php echo $footer_line1 ?>;
+    border-right: 1px solid #<?php echo $footer_line2 ?>;
+}
+
+footer nav li .text-social {
+	color: #<?php echo $footer_text_color ?>;
+}
+
+<?php if ($footer_dark_icon) : ?>
+footer [class ^="social-"],[class *=" social-"] {
+	background-image: url("<?php echo JEG_CSS_URL ?>/img/socialset-light.png");
+}
+footer [class ^="misc-"],[class *=" misc-"] {
+	background-image: url("<?php echo JEG_CSS_URL ?>/img/misc-icon-light.png");
+}
+<?php endif; ?>
+
+body {
+	background-color: #<?php echo $background_color ?>;
+}
+
+<?php if ($body_background) : ?>
+body {
+	background-image:url("<?php echo $body_background ?>");
+}
+<?php endif; ?>
+
+<?php if ($body_bg_fullscreen) : ?>
+body {	
+	background-attachment: fixed;
+	background-clip: border-box;
+	background-color: transparent;
+	background-origin: padding-box;
+	
+	background-repeat : no-repeat;
+	background-attachment : fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+<?php endif; ?>
+
+/** curtain  **/
+<?php if ($curtain_background) : ?>
+.curtainbg {
+	background-image: url("<?php echo $curtain_background ?>");
+}
+<?php endif; ?>
+
+.curtainbg {
+	background-color : #<?php echo $curtain_background_color ?>;
+}
+
+<?php if ($curtain_head_image) : ?>
+.curtainhead {	
+	background-image: url("<?php echo $curtain_head_image ?>");
+}
+<?php endif; ?>
+
+/*** font ***/
+
+#jegbgcontainer .texthome .texthome-wrapper h2, 
+#jegbgcontainer .texthome .texthome-wrapper h1,
+#homepita .torapper, 
+#jegbgcontainer .homeblock .homelink a,
+.item-detail .item-description .item-desc-wrapper h2,
+#contact_block h1,
+#contact_block h2,
+header nav h3
+{
+	<?php echo $heading_font ?>
+}
+
+
+body,p,input,button,select,textarea,.btn ,
+#jeglio .item .item-wrapper .desc-holder h3,
+h1.page-title, 
+h2.project-title ,
+.portfolio-gallery .desc-holder h3,
+.portfolio-gallery .desc-holder h4,
+.blogtitle h2,
+.no-caps,
+.sidebar h3 ,
+table th ,
+div.ps-caption-content,
+.footercopy
+{
+	<?php echo $body_font ?>
+}
+
+#jegbgcontainer .texthome .texthome-wrapper h1,
+#jegbgcontainer .texthome .texthome-wrapper h2 {
+	<?php echo $front_slider_font ?>
+}
+
+blockquote, 
+.testibox author, 
+.testitext,
+.testiwrapper p ,
+.teamlist .job-title ,
+#liofilter ,
+#jeglio .item .italic,
+#item-theater .italic ,
+.gallery-navigator,
+.comment-date,
+#contact_block  #contactform .contact_error ,
+.notification .notification-content,
+footer nav li .text-social,
+header nav span,
+.mpnotif,
+#jeglio .item .item-wrapper .desc-holder h4,
+#jeglio .item .item-wrapper .desc-holder h4 a,
+#jeglio .item .item-wrapper .desc-holder h4 a:visited, 
+.load-more-button
+{
+	<?php echo $heading_alt_font ?>
+}
+
+/** front slider header **/
+#homepita,
+#homepita .homeinfo,
+#jegbgcontainer .homeblock {
+	background-color: rgba(<?php echo $home_pita_flag_outer ?>, 0.3);
+}
+
+#homepita .triangle-border  {
+	border-color: transparent rgba(<?php echo $home_pita_flag_outer ?>, 0.3) transparent transparent;
+}
+
+#homepita .homeinfo .homeflagwrapper {
+	background-color: #<?php echo $home_pita_flag_background ?>;
+}
+
+<?php if ($home_pita_flag_dark_icon) : ?>
+#homepita .homeinfo .homeflagwrapper [class^="misc-"], [class*=" misc-"]{
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/misc-icon-light.png);
+}
+<?php endif; ?>
+
+
+/** front slider **/
+#homepita.hptoogle .torapper {
+	background-color: #<?php echo $home_pita_title_bg_color ?>;
+	border: 1px solid #<?php echo $home_pita_title_bg_color ?>;
+	color : #<?php echo $home_pita_title_color ?>;
+}
+
+#homepita.hptoogle .triangle {
+	border-color: transparent #<?php echo $home_pita_title_bg_color ?> transparent transparent;
+}
+
+#jegbgcontainer .homeblock .homelink {
+	background-color: #<?php echo $home_pita_title_bg_color ?>;
+}
+
+#jegbgcontainer .homeblock .homelink a {
+	color : #<?php echo $home_pita_title_color ?>;
+}
+
+<?php if ($home_pita_box_color) : ?>
+#jegbgcontainer .homeblock .homeblockinside {
+	background: #<?php echo $home_pita_box_color ?>;
+}
+<?php endif; ?>
+
+<?php if ($home_pita_text_color) : ?>
+#jegbgcontainer .homeblock .homeblockinside p {
+	color : #<?php echo $home_pita_text_color ?>;
+}
+<?php endif; ?>
+
+<?php if ($home_pita_dark_icon) : ?>
+#jegbgcontainer .homeblock .homeblockinside [class^="icon-"], [class*=" icon-"] {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings-white.png);
+}
+<?php endif; ?>
+
+
+/** portfolio filter **/
+
+#liofilter>span {
+	border-color: #<?php echo $porto_filter_border ?>;
+	background-color: #<?php echo $porto_filter_background ?>;
+}
+
+#liofilter li {
+	color : #<?php echo $porto_filter_color ?>;
+}
+
+#liofilter li:hover,#liofilter .filter-select {
+	background-color: #<?php echo $porto_filter_background_hover ?>;
+	color: #<?php echo $porto_filter_color_hover ?>;
+}
+
+/** portfolio item **/
+#jeglio .item,
+#jeglio .item .shadow,
+#jeglio .item .shadowload,
+.item-detail,
+.item-detail .item-description  {
+	background-color: #<?php echo $porto_item_background ?>;
+}
+
+<?php if ($porto_dark_icon) : ?>
+#jeglio .item i {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings-white.png);
+}
+<?php endif; ?>
+
+#jeglio .item .item-wrapper .desc-holder h3,
+.item-detail .item-description .item-desc-wrapper h2 {
+	color: #<?php echo $porto_item_description_title ?>;
+	line-height: 140%;
+}
+
+#jeglio .item .item-wrapper .desc-holder h4, 
+#jeglio .item .item-wrapper .desc-holder h4 a, 
+#jeglio .item .item-wrapper .desc-holder h4 a:visited,
+.item-detail .item-description .item-desc-wrapper span {	
+	color: #<?php echo $porto_item_description_category ?>;
+}
+
+.item-detail .item-description .item-desc-wrapper p {
+	color: #<?php echo $porto_item_description_color ?>;
+}
+
+
+/** loader **/
+<?php if ($porto_item_loader) : ?>
+#jeglio .item .small-loader, #jeg-loader {
+	background-image: url("<?php echo $porto_item_loader ?>");
+}
+<?php endif; ?>
+
+<?php if ($big_page_loader) : ?>
+.curtain-loader, .lio-loader , .gallery-main {
+	background-image: url("<?php echo $big_page_loader; ?>");	
+}
+<?php endif; ?>
+
+<?php if ($fullscreen_loader) : ?>
+div.ps-carousel-item-loading { 
+	background-image: url("<?php echo $fullscreen_loader; ?>");	
+}
+<?php endif; ?>
+
+.curtain-loader, .lio-loader , .gallery-main, #jeg-loader {
+	background-color: #<?php echo $big_page_loader_bg; ?>;
+}
+
+/** portfolio navigation **/
+
+.item-navigator .item-prev, .item-navigator .item-next {
+	background-color: #<?php echo $porto_nav_background_color ?>;
+}
+
+.item-navigator .item-prev:hover,.item-navigator .item-next:hover {
+	background-color: #<?php echo $porto_nav_hover_background_color ?>;
+}
+
+.item-navigator {
+	border-top: 1px solid #<?php echo $porto_nav_border_color ?>;
+}
+
+<?php if ($porto_nav_dark_nav) : ?>
+.item-navigator .item-prev .item-icon-prev,
+.item-navigator .item-next .item-icon-next{
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings-white.png);
+}
+<?php endif; ?>
+
+<?php if ($porto_nav_dark_hover_nav) : ?>
+.item-navigator .item-prev:hover .item-icon-prev,
+.item-navigator .item-next:hover .item-icon-next {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings.png);	
+}
+<?php endif; ?>
+
+
+/** blog outer container **/
+<?php if ($schema == 'dark') { ?>
+	.containerborder {
+	  background: none;
+	  border: medium double rgba(<?php echo $blog_outer_border ?>);
+	  border-radius: 0 0 0 0;
+	  padding: 0;
+	}
+<?php } else { ?>	
+	.containerborder {
+		background-color: rgba(<?php echo $blog_outer_background ?>, 0.1);
+		border: 1px solid rgba(<?php echo $blog_outer_border ?>, 0.3);
+	}
+<?php } ?>
+
+/** blog header **/
+<?php if ($blog_header_noimage_background) : ?>
+.blogentry .blog-img {	
+	background: #<?php echo $blog_header_noimage_background ?>;
+	background-image: none;
+}
+.sidebar h3 {
+	background: #<?php echo $blog_header_noimage_background ?>;	
+}
+<?php endif; ?>
+
+
+.blogtitle h2 a,
+.sidebar h3 {
+	color : #<?php echo $blog_header_noimage_color ?>;
+}
+
+.blogentry .blog-img {
+	border-bottom: 1px solid rgba(<?php echo $blog_header_border_color ?>, 1);
+}
+
+.headingwithimage h2, .headingwithimage h1  {
+	background-color: rgba(<?php echo $blog_header_image_background ?>, 0.4);
+}
+
+.headingwithimage h2 a , .headingwithimage h1{
+	color :  #<?php echo $blog_header_image_color ?>;
+}
+
+/** blog inner container **/
+<?php if ($schema == 'dark') { ?>
+	.inner-container {
+	  border: medium none;
+	}
+<?php } else { ?>		
+	.inner-container {
+		border: 1px solid rgba(<?php echo $blog_inner_border ?>, 0.5);
+		background-color: #<?php echo $blog_inner_background ?>;
+	}
+<?php } ?>
+
+
+<?php if ($blog_icon_dark) : ?>
+.inner-container  [class^="icon-"], [class*=" icon-"] {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings-white.png);
+}
+
+.inner-container .icon-white {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings.png);
+}
+<?php endif; ?>
+
+
+/** header meta **/
+.blog-meta a {
+	color: #<?php echo $blog_meta_text_color ?>;
+}
+
+.blog-meta a:hover{
+	color: #<?php echo $blog_meta_hovered_text_color ?>;
+}
+
+.portfolio-meta {
+	color: #<?php echo $blog_meta_text_color ?>;
+	border-bottom : 1px solid #<?php echo $blog_meta_border_color ?>; 
+	background: #<?php echo $blog_meta_background ?>;
+}
+
+.portfolio-meta li {
+	border-right: 1px solid #<?php echo $blog_meta_border_color ?>;
+}
+
+/** blog content **/
+.blog-container p,
+.blog-container h1, .blog-container h2, .blog-container h3, 
+.blog-container h4, .blog-container h5, .blog-container h6,
+.sidebar li ,
+#searchform input[type="text"] {
+	color: #<?php echo $blog_inner_text_color ?>;
+}
+.blog-container a {
+	color: #<?php echo $blog_inner_link_color ?>;
+}
+
+/** blog bottom bar **/
+.blogentry .bottom-bar {
+	border-top: 1px solid #<?php echo $blog_bottom_border ?>;
+	background: #<?php echo $blog_bottom_background ?>;
+}
+
+.blog-like li {
+	border-left: 1px solid #<?php echo $blog_bottom_border ?>;
+}
+
+/** blog comment **/
+.comment-container {
+	background: #<?php echo $blog_comment_background ?>;
+}
+
+.comment-container h1, .comment-container h2, .comment-container h3, 
+.comment-container h4, .comment-container h5, .comment-container h6,
+.comment-container label {
+	color: #<?php echo $blog_comment_text_color ?>;
+}
+
+/** sidebar **/
+.sidebar li:hover {
+	background-color: #<?php echo $blog_sidebar_hover_color ?>;
+}
+
+.sidebar li a {
+	color: #<?php echo $blog_sidebar_link_color ?>;
+}
+
+
+<?php if ($blog_sidebar_dark_icon) : ?>
+.sidebar li {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/arrow-right-white.png);
+}
+<?php endif; ?>
+
+
+/** blog tag **/
+.postag a , .tagcloud a {
+	background-color : #<?php echo $blog_tag_background ?>;
+	color: #<?php echo $blog_tag_color ?>;
+}
+
+/** contact us flag **/
+#contact_block .locationflag,
+#contact_block .contactflag,
+/** ini untuk contact head **/
+#contact_block .contact_form, 
+#contact_block .contact_location {
+	background: rgba(<?php echo $contact_flag_outer ?>, 0.3);
+}
+#contact_block .locationflag .locationflagwrapper,
+#contact_block .contactflag .contactflagwrapper {
+	background-color : #<?php echo $contact_flag_background ?>;
+}
+
+<?php if ($contact_flag_dark_icon) : ?>
+#contact_block .contactflag .contactflagwrapper [class^="misc-"], [class*=" misc-"] ,
+#contact_block .locationflag .locationflagwrapper [class^="misc-"], [class*=" misc-"]{
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/misc-icon-light.png);
+}
+<?php endif; ?>
+
+
+/** contact us head **/
+#contact_block .contact_location_inner h1 ,
+#contact_block .contact_form_inner h1,
+.infowindow-wrapper h2 {
+	background-color : #<?php echo $contact_head_background ?>;
+	color: #<?php echo $contact_head_text ?>;
+}
+
+
+<?php if ($contact_head_arrow) : ?>
+#contact_block .hideform, 
+#contact_block .hidelocation,
+.infowindow-wrapper [class^="icon-"], [class*=" icon-"] {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings.png)
+}
+<?php endif; ?>
+
+
+/** contact us body **/
+#contact_block .contact_location_inner,
+#contact_block .contact_form .contact_form_inner,
+.infowindow-wrapper {
+	background: #<?php echo $contact_body_color ?>;
+	color : #<?php echo $contact_body_text ?>;
+}
+
+#contact_block .contact_location .locationlist .locdetail h2,
+#contact_block .contact_content h2 {
+	color : #<?php echo $contact_body_text ?>;
+}
+
+#contact_block .contact_form .contact_form_inner label {
+	color : #<?php echo $contact_body_text ?>;
+}
+
+#contact_block .contact_form_inner .contact_content .contact_left{
+	border-right: 1px dotted #<?php echo $contact_body_border ?>;
+}
+
+#contact_block .contact_location .locationlist .locdetail li > div, 
+#contact_block .contact_content li > div, 
+.infowindow-wrapper li > div {
+	border-top: 1px dotted #<?php echo $contact_body_border ?>;
+}
+
+#contact_block .contact_location .locationlist .locdetail:hover {
+	border-top : 1px solid #<?php echo $contact_body_border ?>;
+}
+
+#contact_block .contact_location .locationlist .locdetail {
+	border-bottom: 1px solid #<?php echo $contact_body_border ?>;
+}
+
+.view-map {
+	border-bottom: 1px dotted #<?php echo $contact_body_border ?>;
+}
+
+<?php if ($contact_dark_icon) : ?>
+#contact_block .contact_location .locationlist .locdetail i, 
+#contact_block .contact_content i, 
+.infowindow-wrapper i {
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings-white.png);
+}
+#contact_block .contact_location .locationlist .locdetail .phone-icon {
+	background-image: url("<?php echo JEG_CSS_URL ?>/img/phone-white.png");
+}
+<?php endif; ?>
+
+
+/** contact location hovered **/
+#contact_block .contact_location .locationlist .locdetail:hover {
+	background: #<?php echo $contact_location_hover_background ?>;
+	color: #<?php echo $contact_location_hover_text ?>;
+}
+
+#contact_block .contact_location .locationlist .locdetail:hover h2 {
+	color: #<?php echo $contact_location_hover_text ?>;
+}
+
+<?php if ($contact_location_icon_hover) : ?>
+#contact_block .contact_location .locationlist .locdetail:hover i.icon-standard{
+	background-image : url(<?php echo JEG_CSS_URL ?>/img/glyphicons-halflings.png);
+}
+#contact_block .contact_location .locationlist .locdetail:hover .phone-icon {
+	background-image: url(<?php echo JEG_CSS_URL ?>/img/phone.png);
+}
+<?php endif; ?>
+
+
+/** new style **/
+<?php 
+if (!$centered_menu) : ?>
+	
+	header nav .navleft {
+		float: right;
+		text-align: center;
+	}
+	
+	header div.logo {
+		left: inherit;
+		margin-left: 25px;
+	}
+	
+	header nav .navleft, header nav .navright {
+		width: inherit;
+	}
+	
+	header nav .navleft .navleft-wrapper {
+		margin-right: 0px;
+	}	
+	
+	header .menu > li {
+		min-width: inherit;
+	}
+<?php endif; ?>
+
+
+<?php 
+if ($small_menu) : ?>
+	header {
+		min-height : 60px;
+		background-position : 0 -90px;
+	}
+		
+	header nav a {
+	  height: 33px;
+	  padding: 21px 20px 0;
+	}
+	
+	header nav span {
+		display: none;
+	}
+	
+	header nav h3 {
+		text-align: center;
+	}
+	
+	@media only screen and (max-width:767px) {
+		header {
+			background-position: 0 -15px;
+			height: 135px;
+			margin-left: -10px;
+			margin-right: -10px;
+			overflow: hidden;
+			position: relative;
+			width: auto;
+		}
+		
+		header .logo {
+			top : <?php echo ($logo_top_margin + 10); ?>px;
+		}
+	}
+	
+<?php endif; ?>
+
+
+/** long menu **/
+<?php 
+if ($long_menu) : ?>
+
+@media ( max-width :<?php echo $long_menu_width ?>px) and (min-width:768px) {
+	header {
+		background-position: 0 -15px;
+		height: 135px;
+	}
+	
+	header nav span {
+		display: none;
+	}
+	
+	header .menu > li {
+		min-width: inherit;
+	}
+	
+	header nav .navright .navright-wrapper ,
+	header nav .navleft .navleft-wrapper  {
+		margin-left : 0px !important;
+		margin-right : 0px !important;
+	}
+	
+	header nav {
+	  margin-top: 85px;
+	  position: relative;
+	}
+	
+	header nav a {
+	  height: 30px;
+	  padding: 12px 20px 0;
+	}
+	
+	header nav .navleft .menu > li , 
+	header nav .navright .menu > li {
+		background-image: none;
+	}	
+	
+	<?php if ($small_menu) { ?>
+		header .logo {
+			top : <?php echo ($logo_top_margin + 12); ?>px;
+		}
+	<?php } ?>
+	
+	<?php if (!$centered_menu) { ?>
+		header div.logo {
+			left : 50%;
+			margin-left: -<?php echo $logo_margin_left;?>px;
+		}
+		
+		header nav .navleft {
+  			display: inline-table;
+  			float: none;
+		}
+				
+	<?php } ?>
+	
+	
+	<?php if ($schema == 'dark') { ?>
+		header nav {
+		 	border-top: 1px solid;		 	
+  			text-align: center;
+		}	
+		
+		header {
+			position: relative;
+		}
+		
+		body {
+			padding-top: 0px;
+		}
+	<?php } else { ?>
+		header nav {
+		 	border-top: 1px solid #eee;		 	
+	 			text-align: center;
+		}	
+	<?php } ?>
+}
+
+<?php endif; ?>
+
+
+@media (max-width:768px) {
+	header div.logo {
+		left : 50%;
+		margin-left: -<?php echo $logo_margin_left;?>px;
+	}
+}
+
+
+/** additional css **/
+<?php echo $additional_css ?>

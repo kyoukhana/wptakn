@@ -1,0 +1,456 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jegtheme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-12 19:54+0800\n"
+"PO-Revision-Date: 2013-11-12 19:54+0800\n"
+"Last-Translator: Agung Bayu Iswara <agungbayuiswara@gmail.com>\n"
+"Language-Team: jegbagus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;j__;j_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../functions\n"
+"X-Poedit-SearchPath-2: ../includes\n"
+"X-Poedit-SearchPath-3: ../lib\n"
+
+#: ../404.php:22
+msgid "404_lang"
+msgstr ""
+"It look like the page you're looking for doesn't exist, please try more"
+
+#: ../404.php:39 ../includes/contact-template.php:190
+#: ../includes/frame-template.php:15 ../includes/front-template.php:171
+#: ../includes/gallery-template.php:14 ../includes/page-template.php:66
+#: ../includes/portfolio-single-item.php:275
+#: ../includes/portfolio-template.php:96 ../includes/sitemap-template.php:177
+msgid "disableclick"
+msgstr "Right click disabled"
+
+#: ../archive.php:20
+msgid "tag_archive_for_lang"
+msgstr "Tag archive for : <b>%s</b>"
+
+#: ../archive.php:22
+msgid "post_filled_under_lang"
+msgstr "Post filled under : <b>%s</b>"
+
+#: ../archive.php:24
+msgid "post_written_by_lang"
+msgstr "Post written by : <b>%s</b>"
+
+#: ../archive.php:26
+msgid "date_archive_lang"
+msgstr "%s - Archive"
+
+#: ../comments.php:3
+msgid "comment_password_protected_lang"
+msgstr "comment_password_protected_lang"
+
+#: ../comments.php:17
+msgid "name_lang"
+msgstr "Name"
+
+#: ../comments.php:19
+msgid "comment_email_lang"
+msgstr "Email"
+
+#: ../comments.php:21
+msgid "comment_website_lang"
+msgstr "Website"
+
+#: ../comments.php:41
+msgid "comment_required_field_lang"
+msgstr "Required fields are marked %s"
+
+#: ../comments.php:45
+msgid "comment_textarea_lang"
+msgstr "Comment"
+
+#: ../comments.php:46
+msgid "login_to_comment_lang"
+msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
+
+#: ../comments.php:47
+msgid "new_login_as_lang"
+msgstr ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+
+#: ../comments.php:48
+msgid "comment_email_not_publish_lang"
+msgstr "Your email address will not be published."
+
+#: ../comments.php:49
+msgid "comment_markup_lang"
+msgstr ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+
+#: ../comments.php:52
+msgid "comment_leave_reply_lang"
+msgstr "Leave a Reply"
+
+#: ../comments.php:53
+msgid "comment_leave_reply_to_lang"
+msgstr "Leave a Reply to %s"
+
+#: ../comments.php:54
+msgid "comment_cancel_reply_lang"
+msgstr "Cancel reply"
+
+#: ../comments.php:55
+msgid "comment_post_comment_lang"
+msgstr "Post Comment"
+
+#: ../comments.php:67
+msgid "no_comment_lang"
+msgstr "No Comments"
+
+#: ../comments.php:67
+msgid "one_comment_lang"
+msgstr "1 Comment"
+
+#: ../comments.php:67
+msgid "more_comment_lang"
+msgstr "% Comments"
+
+#: ../comments.php:92
+msgid "login_comment_lang"
+msgstr "<p>Please login to comment.</p>"
+
+#: ../footer.php:22
+msgid "music_playlist_lang"
+msgstr "Music Playlist"
+
+#: ../footer.php:72
+msgid "playlist_muted_lang"
+msgstr "Music Playlist Muted"
+
+#: ../footer.php:73
+msgid "playlist_unmuted_lang"
+msgstr "Music Playlist Unmuted"
+
+#: ../footer.php:74
+msgid "playlist_start_play"
+msgstr "Playlist started"
+
+#: ../header.php:88
+msgid "navigate_lang"
+msgstr "Navigate ..."
+
+#: ../search.php:16
+msgid "search_for_lang"
+msgstr "Search for : <b>%s</b>"
+
+#: ../searchform.php:8
+msgid "Search"
+msgstr "Search"
+
+#: ../single-portfolio.php:15
+msgid "no_post_available_lang"
+msgstr "No Post Available"
+
+#: ../functions/comments-function.php:20
+msgid "reply_comment_lang"
+msgstr "Reply"
+
+#: ../functions/comments-function.php:21
+msgid "cancel_reply_comment_lang"
+msgstr "Cancel Reply"
+
+#: ../functions/comments-function.php:27
+msgid "comment_moderation_lang"
+msgstr "<em>Your comment is awaiting moderation</em>"
+
+#: ../functions/common-function.php:9
+msgid "tag_archive_title_lang"
+msgstr "Tag archive for &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:11
+msgid "post_filled_title_lang"
+msgstr "Post filled under &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:13
+msgid "post_written_title_lang"
+msgstr "Post written by &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:16
+msgid "archive_title_lang"
+msgstr " archive "
+
+#: ../functions/common-function.php:18
+msgid "search_for_title_lang"
+msgstr "Search for &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:25
+msgid "not_found_lang"
+msgstr "Not found"
+
+#: ../functions/common-function.php:30
+msgid "page_title_lang"
+msgstr " Page "
+
+#: ../functions/common-function.php:43
+msgid "portfolio_prev"
+msgstr "Previous Portfolio"
+
+#: ../functions/common-function.php:44
+msgid "portfolio_next"
+msgstr "Next Portfolio"
+
+#: ../functions/common-function.php:316
+msgid "read_more_lang"
+msgstr "Read more .."
+
+#: ../functions/common-function.php:372
+msgid "page_of_lang"
+msgstr "Page %d of %d"
+
+#: ../functions/like-function.php:98
+msgid "parameter_not_complete_lang"
+msgstr "Parameter Not Complete"
+
+#: ../functions/like-function.php:104
+msgid "have_voted_lang"
+msgstr "Have Voted"
+
+#: ../functions/like-function.php:110
+msgid "db_error_lang"
+msgstr "Internal DB Error"
+
+#: ../functions/like-function.php:116 ../includes/portfolio-item.php:76
+#: ../includes/portfolio-item.php:117
+msgid "thanks_vote_lang"
+msgstr "Thanks for your vote!"
+
+#: ../includes/contact-template.php:33
+msgid "contact_us_lang"
+msgstr "Contact Us"
+
+#: ../includes/contact-template.php:36
+msgid "contact_detail_lang"
+msgstr "Contact Detail"
+
+#: ../includes/contact-template.php:51
+msgid "click_view_map"
+msgstr "Click for view Map Detail"
+
+#: ../includes/contact-template.php:58
+msgid "contact_form_lang"
+msgstr "Contact Form"
+
+#: ../includes/contact-template.php:61
+msgid "contact_lang"
+msgstr "Name"
+
+#: ../includes/contact-template.php:65
+msgid "contact_email"
+msgstr "Your email"
+
+#: ../includes/contact-template.php:69
+msgid "contact_message"
+msgstr "Message"
+
+#: ../includes/contact-template.php:73
+msgid "contact_send"
+msgstr "Send Contact"
+
+#: ../includes/contact-template.php:93
+msgid "contact_location_lang"
+msgstr "Our Location"
+
+#: ../includes/contact-template.php:97
+msgid "getdirection_lang"
+msgstr "Click to get direction"
+
+#: ../includes/contact-template.php:196
+msgid "cantgetdirection_lang"
+msgstr "Cannot get direction . . . "
+
+#: ../includes/contact-template.php:197
+msgid "dummyposition_lang"
+msgstr "Can't get direction, use dummy position . . . "
+
+#: ../includes/contact-template.php:198
+msgid "geonotsupport_lang"
+msgstr "Your browser don't support Geolocation . . ."
+
+#: ../includes/contact-template.php:199
+msgid "entername_lang"
+msgstr "Please enter your name"
+
+#: ../includes/contact-template.php:200
+msgid "nameminlength_lang"
+msgstr "At least {0} characters required"
+
+#: ../includes/contact-template.php:201
+msgid "enteremail_lang"
+msgstr "Please enter your email"
+
+#: ../includes/contact-template.php:202
+msgid "validemail_lang"
+msgstr "Please enter a valid email"
+
+#: ../includes/contact-template.php:203
+msgid "entermessage_lang"
+msgstr "Please enter a message"
+
+#: ../includes/contact-template.php:204
+msgid "messageminlength_lang"
+msgstr "At least {0} characters required"
+
+#: ../includes/contact-template.php:205
+msgid "sendmessage_lang"
+msgstr "Sending message . . ."
+
+#: ../includes/contact-template.php:206
+msgid "messagesent_lang"
+msgstr "Message Sent . . . "
+
+#: ../includes/contact-template.php:207
+msgid "failsentmessage"
+msgstr "Fail to send message . . . "
+
+#: ../includes/front-template.php:125 ../includes/post-template.php:88
+msgid "more_detail"
+msgstr "More Detail"
+
+#: ../includes/gallery-template.php:23
+msgid "image_gallery_loading"
+msgstr "Loading More Image"
+
+#: ../includes/gallery-template.php:25 ../includes/portfolio-template.php:117
+msgid "protected_portfolio_lang"
+msgstr "Protected Portfolio"
+
+#: ../includes/gallery-template.php:26 ../includes/portfolio-template.php:118
+msgid "password_placeholder_lang"
+msgstr "Password"
+
+#: ../includes/gallery-template.php:27 ../includes/portfolio-template.php:119
+msgid "portfolio_submit_lang"
+msgstr "Submit"
+
+#: ../includes/portfolio-item.php:76 ../includes/portfolio-item.php:117
+msgid "likethis_lang"
+msgstr "Like this"
+
+#: ../includes/portfolio-single-item.php:101
+msgid "click_to_zoom_lang"
+msgstr "Click to zoom"
+
+#: ../includes/portfolio-single-item.php:146
+#: ../includes/portfolio-single-item.php:160
+msgid "no_playback_lang"
+msgstr "No video playback capabilities"
+
+#: ../includes/portfolio-single-item.php:184
+msgid "more_in_portfolio_lang"
+msgstr "More in portofolio"
+
+#: ../includes/portfolio-single-item.php:186
+msgid "previous_lang"
+msgstr "Previous"
+
+#: ../includes/portfolio-single-item.php:187
+msgid "next_lang"
+msgstr "Next"
+
+#: ../includes/portfolio-template.php:35
+msgid "portfolio_all_filter_lang"
+msgstr "All"
+
+#: ../includes/portfolio-template.php:70
+msgid "portfolio_load_more"
+msgstr "Load more"
+
+#: ../includes/portfolio-template.php:70
+msgid "portfolio_loading"
+msgstr "Loading"
+
+#: ../includes/post-template.php:43
+msgid "zerocomment_lang"
+msgstr "0 Comment"
+
+#: ../includes/post-template.php:44
+#, fuzzy
+msgid "onecomment_lang"
+msgstr "1 Comment"
+
+#: ../includes/post-template.php:45
+msgid "morecomment_lang"
+msgstr "% Comments"
+
+#: ../includes/post-template.php:69
+msgid "filled_under_lang"
+msgstr "<p>Filled Under :  %s </p>"
+
+#: ../includes/post-template.php:98
+msgid "share_on_facebook_lang"
+msgstr "Share on Facebook"
+
+#: ../includes/post-template.php:101
+msgid "share_on_twitter_lang"
+msgstr "Share on Twitter"
+
+#: ../includes/post-template.php:104
+msgid "share_on_google_lang"
+msgstr "Share on Google Plus"
+
+#: ../includes/post-template.php:132
+msgid "prev_pos"
+msgstr " Previous Post"
+
+#: ../includes/post-template.php:149
+msgid "next_pos"
+msgstr "Next Post"
+
+#: ../includes/sitemap-template.php:47
+msgid "sitemap_portfolio"
+msgstr "Portfolio"
+
+#: ../includes/sitemap-template.php:66
+msgid "sitemap_frontslider"
+msgstr "Front Slider"
+
+#: ../includes/sitemap-template.php:85
+msgid "sitemap_page"
+msgstr "Page"
+
+#: ../includes/sitemap-template.php:104
+msgid "sitemap_blog"
+msgstr "Blog"
+
+#: ../includes/sitemap-template.php:122
+msgid "sitemap_portfolio_category"
+msgstr "Portfolio Category"
+
+#: ../includes/sitemap-template.php:134
+msgid "sitemap_blog_category"
+msgstr "Blog Category"
+
+#: ../includes/sitemap-template.php:150
+msgid "sitemap_blog_tag"
+msgstr "Blog Tag"
+
+#~ msgid "your_email_lang"
+#~ msgstr "Your Email"
+
+#~ msgid "leave_comment_lang"
+#~ msgstr "Leave Comment"
+
+#~ msgid "send_comment_lang"
+#~ msgstr "Send Comment"
+
+#~ msgid "email_friend_lang"
+#~ msgstr "Email your friend"
+
+#~ msgid "page_lang"
+#~ msgstr "Page %d of %d"
+
+#~ msgid "page"
+#~ msgstr " Page "

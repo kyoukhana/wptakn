@@ -1,0 +1,14 @@
+<div class="setting-option">	
+	<h4 class="setting-title"><?php echo $title ?> :</h4>	
+	<input type="button" class="btn" value="Click here to view email template"  onclick="window.open('<?php echo home_url() ?>?email-template=true', '', 'width=670,height=600'); return false;"/>
+	<span class="meta-description"><?php echo $description; ?></span>
+	
+	<?php if(isset($help)) : ?>
+	<div class="moreinfo" title="More Info">&nbsp;</div>
+	<div class="help">
+		<div class="help-wrapper">
+			<?php echo $help; ?>
+		</div>
+	</div>
+	<?php endif; ?>
+</div>

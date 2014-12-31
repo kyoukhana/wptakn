@@ -1,0 +1,66 @@
+<div class="setting-wrapper mapdata">
+	<div class="setting-option" id="locationinsert">	
+		<h4 class="setting-title"><?php echo $title ?> :</h4>	
+		
+		<h4 class="setting-title">Location title :</h4>
+		<input type="text" class="locationtitle"/>
+		<span class="meta-description"></span>
+		
+		<h4 class="setting-title">location  X Coordinate :</h4>
+		<input type="text" class="xcoordinate"/>
+		<span class="meta-description">Location x coordinate value</span>
+		
+		<h4 class="setting-title">location  Y Coordinate :</h4>
+		<input type="text" class="ycoordinate"/>
+		<span class="meta-description">Location y coordinate value</span>
+		
+		<h4 class="setting-title">Address first line :</h4>
+		<input type="text" class="addressfirstlane"/>
+		
+		<h4 class="setting-title">Address second line :</h4>
+		<input type="text" class="addresssecline"/>
+		
+		<h4 class="setting-title">Phone :</h4>
+		<input type="text" class="phone"/>
+		<span class="meta-description">If you have more than one phone address, separate it with comma</span>
+		
+		<div class="locsubmit">
+			<input type="button" class="btn" value="Add Pin"></input>
+		</div>	
+	</div>
+		
+	<div class="setting-option">
+		<h4 class="setting-title">
+			Location result ( drag to change sequence) :
+		</h4>		
+		<div class="locationresult" id="locationresult">			
+			<ul>
+				<?php					
+					if(!empty($value)) : 
+						foreach($value as $val) : 
+				?>
+				<li class="locationitem">
+					<div class="locationicon"></div>
+					<div class="locationtext">
+						<table>
+							<tr>
+							<td>Location Title </td><td> : </td><td class='resulttitle'><?php echo $val->title; ?></td></tr>
+							<tr><td>Coordinate</td><td> : </td><td><span class='resultx'><?php echo $val->x; ?></span> - <span class='resulty'><?php echo $val->y; ?></span></td></tr>
+							<tr><td>Address</td><td>:</td><td><span class='resultfirstline'><?php echo $val->firstlane; ?></span> - <span class='resultsecondline'><?php echo $val->secondlane; ?></span></td></tr>
+							<tr><td>Phone Number</td><td>:</td><td><span class='resultphone'><?php echo $val->phone; ?></span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="locationedit" title="edit">&nbsp;</div>
+					<div class="locationdel" title="delete">&nbsp;</div>
+				</li>
+				<?php 
+						endforeach; 
+					endif;
+				?>
+			</ul>
+		</div>
+		<input type="hidden" class="locationresultval" name="<?php echo $id; ?>" id="<?php echo $id; ?>" value='<?php echo json_encode($value); ?>' />		
+	</div>	
+</div>
+

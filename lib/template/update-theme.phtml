@@ -1,0 +1,66 @@
+<style>
+.update-nag {
+	display: none;
+}
+
+#instructions {
+	max-width: 670px;
+}
+
+h3.title {
+	margin: 30px 0 0 0;
+	padding: 30px 0 0 0;
+	border-top: 1px solid #ddd;
+}
+</style>
+
+<div class="wrap">
+	<div id="icon-tools" class="icon32"></div>	
+	<h2><?php echo JEG_THEMENAME ?> Theme Updates</h2>
+	<div id="message" class="updated below-h2">
+	<p><strong><?php echo $data->message; ?></strong> You have version <?php echo JEG_VERSION; ?>
+	 currently installed. Update to version <?php echo $data->version; ?>.</p>
+	</div>
+	
+	<div id="instructions">
+	<h3>Update Download and Instructions</h3>
+	<p>To download the latest update of the theme, login to <a
+		href="http://www.themeforest.net/">ThemeForest</a>, head over to your <strong>downloads</strong>
+	section and re-download the theme like you did when you bought it.</p>
+	<p>There are two main ways of installing an update:</p>
+	<ol>
+		<li><i><b>By uploading the theme as a new theme (recommended)</b></i>-
+		this is an easier way to accomplish this. You just have to upload the
+		updated theme zip file via the built in WordPress theme uploader as a
+		new theme from the Appearance &raquo; Themes &raquo; Install Themes
+		&raquo; Upload section.
+	
+		<div class="note_box"><b>Note: </b><i>Please note that with the
+		activating of the new theme it is possible your menu setting not to be
+		saved for the new theme. If so, you just have to go to Appearance
+		&raquo; Menus &raquo; Theme Locations, select the menu (it will be
+		still there) and press the "Save" button</i>.</div>
+		</li>
+		<li><i><b>Via FTP</b></i> - you have to first unzip the zipped theme
+		file and then you can use an FTP client (such as <a
+			href="http://filezilla-project.org/download.php">FileZilla</a>) and
+		replace all the theme files with the updated ones.
+	
+		<div class="note_box"><b>Note: </b><i>Please note that with the file
+		replacing all the code changes you have made to the files (if you have
+		made any) will be lost, so please make sure you have a backup copy of
+		the theme files before you do the replacement. All the settings that
+		you have made from the admin panel won't be lost- they will be still
+		available.</i></div>
+		</li>
+	</ol>
+	<div class="clear"></div>
+	<p>For more information about the updates, please refer to the "Updates"
+	section of the documentation included.</p>
+	<br />
+	<div class="icon32 icon32-posts-page" id="icon-edit-pages"><br>
+	</div>
+	<h2 class="title">Update Changes</h2>
+	<?php echo $data->changelog; ?>
+	</div>
+</div>

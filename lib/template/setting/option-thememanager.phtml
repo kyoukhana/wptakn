@@ -1,0 +1,52 @@
+<div class="setting-wrapper thememanager">
+	<div class="setting-option">
+	
+		<h4 class="setting-title" style="border-bottom: 1px solid rgb(223, 223, 223); margin: 0px -25px; padding: 10px 25px;">
+			<?php echo $title ?>
+		</h4>
+		<h4 class="setting-title">Style Manager Name :</h4>	
+		<input type="text" class="managertitle"/>		
+		<h4 class="setting-title">Dark Color Schema For style manager:</h4>
+		<input type="checkbox" class="switchtoogle managerschema" value="1"/>
+		
+		<span class="meta-description"><?php echo $description; ?></span>
+		<div class="thememanagersubmit">
+			<input type="button" class="btn" value="Create New Style Manager"></input>
+		</div>	
+	</div>
+		
+	<div class="setting-option">
+		<h4 class="setting-title">
+			Style Manager List (drag to change sequence. top sequence will become main style manager) 
+		</h4>		
+		<div class="thememanager_result">
+			<ul>
+				<?php
+					if(!empty($value)) : 
+						foreach($value as $val) : 
+						
+				?>
+				<li class="thememanager_item">
+					<div class="thememanager_text">
+						<span class="thememanager_titleitem"><?php echo $val->title; ?></span>
+					
+					<?php if($val->title == 'default') : ?>
+						(<span class="thememanager_schema">light</span>)
+					<?php else :  ?>
+						(<span class="thememanager_schema"><?php echo $val->schema; ?></span>)
+					<?php endif; ?>
+					</div>
+					<?php if($val->title != 'default') : ?>
+					<div class="thememanager_del">&nbsp;</div>
+					<?php endif; ?>
+				</li>
+				<?php 
+						endforeach; 
+					endif;
+				?>
+			</ul>
+		</div>
+		<input type="hidden" class="thememanagerresult" name="<?php echo $id; ?>" id="<?php echo $id; ?>" value='<?php echo json_encode($value); ?>' />		
+	</div>	
+</div>
+

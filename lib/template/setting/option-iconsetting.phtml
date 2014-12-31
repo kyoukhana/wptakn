@@ -1,0 +1,49 @@
+<div class="setting-wrapper">
+	<div class="setting-option">	
+		<h4 class="setting-title"><?php echo $title ?> :</h4>	
+		
+		<ul class="iconset">
+			<?php foreach($icons as $icon) : ?>
+			<li class="iconitem"><span class="<?php echo $icon?>"></span></li>
+			<?php endforeach;?>
+			<li style="clear: both; height: 5px;"></li>
+		</ul>
+		
+		<h4 class="setting-title">Hover title :</h4>
+		<input type="text" class="hovertitle"/>
+		
+		<h4 class="setting-title">URL :</h4>
+		<input type="text" class="iconurl"/>
+		
+		<div class="iconsubmit">
+			<input type="button" class="btn" value="Add Icon"></input>
+		</div>	
+	</div>
+		
+	<div class="setting-option">
+		<h4 class="setting-title">
+			<?php echo $title ?> arrangement result ( drag to change sequence) :
+		</h4>		
+		<div class="iconresult">
+			<ul>
+				<?php
+					if(!empty($value)) : 
+						foreach($value as $val) : 
+				?>
+				<li class="iconresultitem">
+					<div class="iconresulticon"><span class="<?php echo $val->icon;?>"></span></div>
+					<div class="iconresulttext">
+						<span class="hovertitle"><?php echo $val->title;?></span> - <span class="iconurl"><?php echo $val->url;?></span>
+					</div>
+					<div class="iconresultdel">&nbsp;</div>
+				</li>
+				<?php 
+						endforeach; 
+					endif;
+				?>
+			</ul>
+		</div>
+		<input type="hidden" class="iconresultval" name="<?php echo $id; ?>" id="<?php echo $id; ?>" value='<?php echo json_encode($value); ?>' />		
+	</div>	
+</div>
+

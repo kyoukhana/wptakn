@@ -1,0 +1,49 @@
+<table style="font-size:14px" cellpadding="0" cellspacing="0" width="650">
+        <tbody><tr>
+            <td background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_tl.gif" bgcolor="#ffffff" height="10" width="10"></td>
+            <td background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_top.gif" bgcolor="#ffffff" height="10"> </td>
+            <td background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_tr.gif" bgcolor="#ffffff" height="10" width="10"> </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_left.gif" bgcolor="#ffffff" width="10"></td>
+            <td align="center" bgcolor="#<?php echo $head_color; ?>" style="padding : 10px 0;">
+                <table width="95%"><tbody><tr>
+                    <td align="center">
+                        <img src="<?php echo $header_logo; ?>">
+                    </td>
+                </tr></tbody></table>
+            </td>
+            <td rowspan="2" background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_right.gif" bgcolor="#ffffff" width="10"> </td>
+        </tr>
+
+        <tr>
+            <td align="center" bgcolor="#<?php echo $body_color; ?>">
+                <table cellpadding="30" width="95%">
+                    <tbody><tr>
+                        <td align="left">
+                            <font face="Lucida Grande, Segoe UI, Arial, Verdana, Lucida Sans Unicode, Tahoma, Sans Serif" style="font-size: 14px; color: #<?php echo $email_body_color; ?>">
+								<?php echo apply_filters('the_content', $body_text); ; ?>
+                            </font>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+        <tr>
+            <td background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_bl.gif" bgcolor="#ffffff" height="10" width="10"></td>
+            <td background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_bottom.gif" bgcolor="#ffffff" height="10"> </td>
+            <td background="<?php echo JEG_CSS_URL . "img/email"?>/shadow_br.gif" bgcolor="#ffffff" height="10" width="10"> </td>
+        </tr>
+    <tr>
+        <td></td>
+        <td align="right">
+            <span style="font-family:'Lucida Grande', 'Segoe UI', Arial, Verdana, 'Lucida Sans Unicode', Tahoma, 'Sans Serif'; font-size:11px; color:#888">
+            	<?php echo $footer_text; ?>            	
+            </span>
+        </td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>

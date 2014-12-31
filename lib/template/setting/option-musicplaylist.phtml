@@ -1,0 +1,61 @@
+<div class="setting-wrapper playlistdata">
+	<div class="setting-option" id="musicinsert">	
+		<h4 class="setting-title"><?php echo $title ?> :</h4>	
+		
+		<h4 class="setting-title">Music Title :</h4>
+		<input type="text" class="mp_title"/>
+		<span class="meta-description"></span>
+		
+		<h4 class="setting-title">MP3 File Type:</h4>		
+		<div class="uploadfile">		
+			<input type="text" class="mp_mp3 uploadtext"/>
+			<input type="button" value="Select File" class="selectfile"/>
+		</div>
+		<span class="meta-description">Upload your mp3 file for this music playlist		</span>
+		
+		<h4 class="setting-title">OGG File Type :</h4>
+		<div class="uploadfile">
+			<input type="text" class="mp_ogg uploadtext"/>
+			<input type="button" value="Select File" class="selectfile"/>
+		</div>
+		<span class="meta-description">Upload your ogg file for music playlist, this file will be laoded if your visitor using firefox.</span>
+				
+		<div class="musicsubmit">
+			<input type="button" class="btn" value="Add Music"></input>
+		</div>	
+	</div>
+		
+	<div class="setting-option">
+		<h4 class="setting-title">
+			Music List :
+		</h4>
+		<div class="musicresult" id="musicresult">			
+			<ul>
+				<?php					
+					if(!empty($value)) : 
+						foreach($value as $val) : 
+				?>
+				<li class="musicitem">
+					<div class="musicicon"></div>
+					<div class="musictext">
+						<table>
+							<tr>
+							<td>Music Title </td><td> : </td><td class='resulttitle'><?php echo $val->title; ?></td></tr>
+							<tr><td>MP3 File</td><td> : </td><td><span class='resultmp3'><?php echo $val->mp3; ?></span></td></tr>
+							<tr><td>OGG File</td><td>:</td><td><span class='resultogg'><?php echo $val->oga; ?></span></td></tr>							
+							</tr>
+						</table>
+					</div>
+					<div class="musicedit" title="edit">&nbsp;</div>
+					<div class="musicdel" title="delete">&nbsp;</div>
+				</li>
+				<?php 
+						endforeach; 
+					endif;
+				?>
+			</ul>
+		</div>
+		<input type="hidden" class="musicresultval" name="<?php echo $id; ?>" id="<?php echo $id; ?>" value='<?php echo json_encode($value); ?>' />		
+	</div>	
+</div>
+

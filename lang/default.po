@@ -1,0 +1,344 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jegtheme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-10 11:17+0800\n"
+"PO-Revision-Date: 2012-09-10 11:18+0800\n"
+"Last-Translator: Agung Bayu Iswara <agungbayuiswara@gmail.com>\n"
+"Language-Team: jegbagus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;j__;j_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../functions\n"
+"X-Poedit-SearchPath-2: ../includes\n"
+
+#: ../404.php:18
+msgid "404_lang"
+msgstr "It look like the page you're looking for doesn't exist, please try more"
+
+#: ../404.php:35
+msgid "disableclick"
+msgstr "Right click disabled"
+
+#: ../archive.php:16
+msgid "tag_archive_for_lang"
+msgstr "Tag archive for : <b>%s</b>"
+
+#: ../archive.php:18
+msgid "post_filled_under_lang"
+msgstr "Post filled under : <b>%s</b>"
+
+#: ../archive.php:20
+msgid "post_written_by_lang"
+msgstr "Post written by : <b>%s</b>"
+
+#: ../archive.php:22
+msgid "date_archive_lang"
+msgstr "%s - Archive"
+
+#: ../comments.php:6
+msgid "comment_password_protected_lang"
+msgstr "comment_password_protected_lang"
+
+#: ../comments.php:20
+msgid "name_lang"
+msgstr "Name"
+
+#: ../comments.php:22
+msgid "comment_email_lang"
+msgstr "Email"
+
+#: ../comments.php:24
+msgid "comment_website_lang"
+msgstr "Website"
+
+#: ../comments.php:42
+msgid "login_to_comment_lang"
+msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
+
+#: ../comments.php:43
+msgid "login_as_lang"
+msgstr "Login as  <b>%s</b> , <a href=\"%s\">Not you? Logout. </a>"
+
+#: ../comments.php:44
+msgid "comment_email_not_publish_lang"
+msgstr "Your email address will not be published."
+
+#: ../comments.php:45
+msgid "comment_markup_lang"
+msgstr "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: %s"
+
+#: ../comments.php:48
+msgid "comment_leave_reply_lang"
+msgstr "Leave a Reply"
+
+#: ../comments.php:49
+msgid "comment_leave_reply_to_lang"
+msgstr "Leave a Reply to %s"
+
+#: ../comments.php:50
+msgid "comment_cancel_reply_lang"
+msgstr "Cancel reply"
+
+#: ../comments.php:51
+msgid "comment_post_comment_lang"
+msgstr "Post Comment"
+
+#: ../comments.php:63
+msgid "no_comment_lang"
+msgstr "No Comments"
+
+#: ../comments.php:63
+msgid "one_comment_lang"
+msgstr "1 Comment"
+
+#: ../comments.php:63
+msgid "more_comment_lang"
+msgstr "% Comments"
+
+#: ../comments.php:88
+msgid "login_comment_lang"
+msgstr "<p>Please login to comment.</p>"
+
+#: ../footer.php:21
+msgid "music_playlist_lang"
+msgstr "Music Playlist"
+
+#: ../footer.php:71
+msgid "playlist_muted_lang"
+msgstr "Music Playlist Muted"
+
+#: ../footer.php:72
+msgid "playlist_unmuted_lang"
+msgstr "Music Playlist Unmuted"
+
+#: ../footer.php:73
+msgid "playlist_start_play"
+msgstr "Playlist started"
+
+#: ../header.php:118
+msgid "navigate_lang"
+msgstr "Navigate ..."
+
+#: ../search.php:12
+msgid "search_for_lang"
+msgstr "Search for : <b>%s</b>"
+
+#: ../searchform.php:8
+msgid "Search"
+msgstr "Search"
+
+#: ../single-portfolio.php:11
+msgid "no_post_available_lang"
+msgstr "No Post Available"
+
+#: ../functions/comments-function.php:27
+msgid "comment_moderation_lang"
+msgstr "<em>Your comment is awaiting moderation</em>"
+
+#: ../functions/common-function.php:9
+msgid "tag_archive_title_lang"
+msgstr "Tag archive for &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:11
+msgid "post_filled_title_lang"
+msgstr "Post filled under &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:13
+msgid "post_written_title_lang"
+msgstr "Post written by &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:16
+msgid "archive_title_lang"
+msgstr " archive "
+
+#: ../functions/common-function.php:18
+msgid "search_for_title_lang"
+msgstr "Search for &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:25
+msgid "not_found_lang"
+msgstr "Not found"
+
+#: ../functions/common-function.php:30
+msgid "page_title_lang"
+msgstr " Page "
+
+#: ../functions/common-function.php:275
+msgid "read_more_lang"
+msgstr "Read more .."
+
+#: ../functions/common-function.php:322
+msgid "page_of_lang"
+msgstr "Page %d of %d"
+
+#: ../functions/like-function.php:94
+msgid "parameter_not_complete_lang"
+msgstr "Parameter Not Complete"
+
+#: ../functions/like-function.php:100
+msgid "have_voted_lang"
+msgstr "Have Voted"
+
+#: ../functions/like-function.php:106
+msgid "db_error_lang"
+msgstr "Internal DB Error"
+
+#: ../functions/like-function.php:112
+#: ../includes/portfolio-item.php:67
+msgid "thanks_vote_lang"
+msgstr "Thanks for your vote!"
+
+#: ../includes/contact-template.php:31
+msgid "contact_us_lang"
+msgstr "Contact Us"
+
+#: ../includes/contact-template.php:34
+msgid "contact_detail_lang"
+msgstr "Contact Detail"
+
+#: ../includes/contact-template.php:48
+msgid "click_view_map"
+msgstr "Click for view Map Detail"
+
+#: ../includes/contact-template.php:54
+msgid "contact_form_lang"
+msgstr "Contact Form"
+
+#: ../includes/contact-template.php:61
+msgid "your_email_lang"
+msgstr "Your Email"
+
+#: ../includes/contact-template.php:65
+msgid "contact_message"
+msgstr "Message"
+
+#: ../includes/contact-template.php:69
+msgid "contact_send"
+msgstr "Send Contact"
+
+#: ../includes/contact-template.php:87
+msgid "contact_location_lang"
+msgstr "Our Location"
+
+#: ../includes/contact-template.php:160
+msgid "cantgetdirection_lang"
+msgstr "Cannot get direction . . . "
+
+#: ../includes/contact-template.php:161
+msgid "dummyposition_lang"
+msgstr "Can't get direction, use dummy position . . . "
+
+#: ../includes/contact-template.php:162
+msgid "geonotsupport_lang"
+msgstr "Your browser don't support Geolocation . . ."
+
+#: ../includes/contact-template.php:163
+msgid "entername_lang"
+msgstr "Please enter your name"
+
+#: ../includes/contact-template.php:164
+msgid "nameminlength_lang"
+msgstr "At least {0} characters required"
+
+#: ../includes/contact-template.php:165
+msgid "enteremail_lang"
+msgstr "Please enter your email"
+
+#: ../includes/contact-template.php:166
+msgid "validemail_lang"
+msgstr "Please enter a valid email"
+
+#: ../includes/contact-template.php:167
+msgid "entermessage_lang"
+msgstr "Please enter a message"
+
+#: ../includes/contact-template.php:168
+msgid "messageminlength_lang"
+msgstr "At least {0} characters required"
+
+#: ../includes/contact-template.php:169
+msgid "sendmessage_lang"
+msgstr "Sending message . . ."
+
+#: ../includes/contact-template.php:170
+msgid "messagesent_lang"
+msgstr "Message Sent . . . "
+
+#: ../includes/contact-template.php:171
+msgid "failsentmessage"
+msgstr "Fail to send message . . . "
+
+#: ../includes/front-template.php:99
+msgid "more_detail"
+msgstr "More Detail"
+
+#: ../includes/portfolio-item.php:67
+msgid "likethis_lang"
+msgstr "Like this"
+
+#: ../includes/portfolio-single-item.php:67
+msgid "click_to_zoom_lang"
+msgstr "Click to zoom"
+
+#: ../includes/portfolio-single-item.php:111
+#: ../includes/portfolio-single-item.php:125
+msgid "no_playback_lang"
+msgstr "No video playback capabilities"
+
+#: ../includes/portfolio-single-item.php:136
+msgid "more_in_portfolio_lang"
+msgstr "More in portofolio"
+
+#: ../includes/portfolio-single-item.php:138
+msgid "previous_lang"
+msgstr "Previous"
+
+#: ../includes/portfolio-single-item.php:139
+msgid "next_lang"
+msgstr "Next"
+
+#: ../includes/portfolio-template.php:86
+msgid "protected_portfolio_lang"
+msgstr "Protected Portfolio"
+
+#: ../includes/portfolio-template.php:87
+msgid "password_placeholder_lang"
+msgstr "Password"
+
+#: ../includes/portfolio-template.php:88
+msgid "portfolio_submit_lang"
+msgstr "Submit"
+
+#: ../includes/post-template.php:65
+msgid "filled_under_lang"
+msgstr "<p>Filled Under :  %s </p>"
+
+#: ../includes/post-template.php:94
+msgid "share_on_facebook_lang"
+msgstr "Share on Facebook"
+
+#: ../includes/post-template.php:97
+msgid "share_on_twitter_lang"
+msgstr "Share on Twitter"
+
+#~ msgid "leave_comment_lang"
+#~ msgstr "Leave Comment"
+
+#~ msgid "send_comment_lang"
+#~ msgstr "Send Comment"
+
+#~ msgid "share_on_digg_lang"
+#~ msgstr "Share on Digg"
+
+#~ msgid "email_friend_lang"
+#~ msgstr "Email your friend"
+
+#~ msgid "page_lang"
+#~ msgstr "Page %d of %d"
+
+#~ msgid "page"
+#~ msgstr " Page "

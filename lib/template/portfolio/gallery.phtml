@@ -1,0 +1,76 @@
+<div class="item-detail" data-cover='<?php echo $image_cover; ?>'>
+	<div class="item-gallery flexslider">
+		<?php if(!empty($download_url)) : ?>
+		<div class="item-download">
+			<a data-alt="<?php _e('Download'); ?>" href="<?php echo $download_url; ?>">
+				<div class="icon-download-alt">&nbsp;</div>
+			</a>
+		</div>
+		<?php endif; ?>
+		<?php 
+			if(!empty($gallery)) : 
+				if(sizeof($gallery) > 1) :
+		?>
+			<ul class="slides">			
+					<?php foreach ($gallery as $img) : ?>
+					<li>
+						<a target="_blank" data-alt="<?php j_e('click_to_zoom_lang'); ?>" class="item-gallery-image" href="#" data-title="<?php echo $img['title'] ?>" data="<?php echo $img['file'] ?>" data-tourl="false">
+							<img data-src="<?php echo jeg_get_image($img['file'], '', $width, $height, $croped_image); ?>" src="<?php echo JEG_CSS_URL . 'img/empty.png'; ?>" />	                
+						</a>
+					</li>
+					<?php endforeach; ?>			
+			</ul>
+		<?php 
+				else :
+		?>
+			<ul class="slides">			
+					<?php foreach ($gallery as $img) : ?>
+					<li>
+						<a target="_blank" data-alt="<?php j_e('click_to_zoom_lang'); ?>" class="item-gallery-image" href="#" data-title="<?php echo $img['title'] ?>" data="<?php echo $img['file'] ?>" data-tourl="false">
+							<img src="<?php echo jeg_get_image($img['file'], '', $width, $height, $croped_image); ?>" src="<?php echo JEG_CSS_URL . 'img/empty.png'; ?>" />	                
+						</a>
+					</li>
+					<?php endforeach; ?>			
+			</ul>
+		<?php 
+				endif;
+			else : 
+		?>
+			<div style="position: relative; width: 100%; height: 100%;">
+				<div style="display: table; width: 100%; height: 100%; ">
+					<p style="font-weight: bold; display: table-cell; vertical-align: middle; text-align: center; padding : 50px;">
+						Your image gallery is empty. Portfolio won't work as you expected. <br/> 
+						You need to insert gallery using upload/insert image on portfolio
+					</p>
+				</div>
+			</div>			
+		<?php endif; ?>
+		
+		<div class="item-description-wrapper">Loading Description</div>		
+	</div>
+	<div class="item-description">
+		<div class="item-desc-wrapper">
+			<h2><?php echo $title; ?></h2>
+			<?php 
+			if(j_get_option('social_sharer')) :
+				echo $socialblock;
+			endif; 
+			?>
+			<span><?php echo implode(', ', $catlist)?></span>
+			<div class="wrapper-text"><?php echo $content; ?></div>
+		</div>		
+		
+		<div class="item-navigator">
+			<a href="" data-tourl="false">
+				<div class="item-prev" title="<?php j_e('portfolio_prev', "Previous Portfolio")?>">
+					<div class="icon-chevron-left item-icon-prev">&nbsp;</div>
+				</div>
+			</a>
+			<a href="" data-tourl="false">
+				<div class="item-next" title="<?php j_e('portfolio_next', "Next Portfolio")?>">			
+					<div class="icon-chevron-right item-icon-next">&nbsp;</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>

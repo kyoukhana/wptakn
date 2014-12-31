@@ -1,0 +1,10 @@
+<div class="jeg-meta-tab">
+	<div class="jeg-tab">
+		<?php echo $key; ?>
+		<?php echo $content; ?>		
+	</div>
+	<!-- default front slider will be image **/  -->
+	<?php echo j_create_metabox_nonce('j_frontslider_media'); ?>
+	<input type="hidden" value="<?php echo $frontslidermedia; ?>" name="<?php echo j_name('frontslider_media')?>" id="j_frontslider_media" />
+</div>
+	

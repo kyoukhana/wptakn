@@ -1,0 +1,102 @@
+<wpml-config>
+ <custom-types>
+	<custom-type translate="1">frontslider</custom-type>
+	<custom-type translate="1">portfolio</custom-type>
+ </custom-types>
+ <custom-fields>
+  <custom-field action="translate">title</custom-field>
+  <custom-field action="translate">description</custom-field>
+  <custom-field action="translate">keywords</custom-field>
+  <custom-field action="translate">title</custom-field>
+  
+  <custom-field action="copy">jlio_single_stop_music</custom-field>
+  <custom-field action="copy">jlio_frontslider_nocrop</custom-field>
+  <custom-field action="copy">jlio_frontslider_pos</custom-field>
+  <custom-field action="copy">jlio_frontslider_image_link</custom-field>
+  <custom-field action="copy">jlio_frontslider_youtube_url_link</custom-field>
+  <custom-field action="copy">jlio_frontslider_youtube_url</custom-field>
+  <custom-field action="copy">jlio_frontslider_youtube_image</custom-field>
+  <custom-field action="copy">jlio_frontslider_youtube_nocrop</custom-field>
+  <custom-field action="copy">jlio_frontslider_youtube_pos</custom-field>
+  <custom-field action="copy">jlio_frontslider_video_link</custom-field>
+  <custom-field action="copy">jlio_frontslider_video_mp4</custom-field>
+  <custom-field action="copy">jlio_frontslider_video_ogg</custom-field>
+  <custom-field action="copy">jlio_frontslider_video_webm</custom-field>
+  <custom-field action="copy">jlio_frontslider_html_image</custom-field>
+  <custom-field action="copy">jlio_frontslider_html_nocrop</custom-field>
+  <custom-field action="copy">jlio_frontslider_html_pos</custom-field>
+  <custom-field action="copy">jlio_porto_gallery_cover</custom-field>
+  <custom-field action="copy">jlio_porto_gallery_download_url</custom-field>
+  <custom-field action="copy">jlio_porto_gallery_crop</custom-field>
+  <custom-field action="copy">jlio_porto_image_gallery</custom-field>
+  <custom-field action="copy">jlio_porto_youtube_url</custom-field>
+  <custom-field action="copy">jlio_porto_youtube_cover</custom-field>
+  <custom-field action="copy">jlio_porto_youtube_download_url</custom-field>
+  <custom-field action="copy">jlio_porto_vimeo_url</custom-field>
+  <custom-field action="copy">jlio_porto_vimeo_cover</custom-field>
+  <custom-field action="copy">jlio_porto_vimeo_download_url</custom-field>
+  <custom-field action="copy">jlio_porto_video_mp4</custom-field>
+  <custom-field action="copy">jlio_porto_video_ogg</custom-field>
+  <custom-field action="copy">jlio_porto_video_webm</custom-field>
+  <custom-field action="copy">jlio_porto_video_cover</custom-field>
+  <custom-field action="copy">jlio_porto_video_download_url</custom-field>
+  <custom-field action="copy">jlio_porto_music_mp3</custom-field>
+  <custom-field action="copy">jlio_porto_music_ogg</custom-field>
+  <custom-field action="copy">jlio_porto_music_cover</custom-field>
+  <custom-field action="copy">jlio_porto_audio_download_url</custom-field>
+  <custom-field action="copy">jlio_porto_link_cover</custom-field>
+  <custom-field action="copy">jlio_porto_link_url</custom-field>
+  <custom-field action="copy">jlio_porto_link_blank</custom-field>
+  <custom-field action="copy">jlio_post_initial_like</custom-field>
+  <custom-field action="copy">jlio_single_layout</custom-field>
+  <custom-field action="copy">jlio_single_sidebar</custom-field>
+  <custom-field action="copy">jlio_single_hidemeta</custom-field>
+  <custom-field action="copy">jlio_single_hidecomment</custom-field>
+  <custom-field action="copy">jlio_single_stop_music</custom-field>
+  <custom-field action="copy">jlio_portfolio_filter</custom-field>
+  <custom-field action="copy">jlio_portfolio_image_caption</custom-field>
+  <custom-field action="copy">jlio_portfolio_paging</custom-field>
+  <custom-field action="copy">jlio_portfolio_per_page</custom-field>
+  <custom-field action="copy">jlio_portfolio_layout</custom-field>
+  <custom-field action="copy">jlio_portfolio_exclude</custom-field>
+  <custom-field action="copy">jlio_portfolio_item_width</custom-field>
+  <custom-field action="copy">jlio_portfolio_item_height</custom-field>
+  <custom-field action="copy">jlio_portfolio_item_transition</custom-field>
+  <custom-field action="copy">jlio_portfolio_theatherMode</custom-field>
+  <custom-field action="copy">jlio_portfolio_galdim</custom-field>
+  <custom-field action="copy">jlio_portfolio_description</custom-field>
+  <custom-field action="copy">jlio_portfolio_descdim</custom-field>
+  <custom-field action="copy">jlio_portfolio_wide_height</custom-field>
+  <custom-field action="copy">jlio_frontslider_title</custom-field>
+  <custom-field action="copy">jlio_frontslider_alt</custom-field>
+  <custom-field action="copy">jlio_frontslider_delay</custom-field>
+  <custom-field action="copy">jlio_front_slider_info_hide</custom-field>
+  <custom-field action="copy">jlio_frame_url</custom-field>
+  <custom-field action="copy">jlio_image_paging</custom-field>
+  <custom-field action="copy">jlio_image_per_page</custom-field>
+  <custom-field action="copy">jlio_gallery_item_width</custom-field>
+  <custom-field action="copy">jlio_gallery_item_height</custom-field>
+  <custom-field action="copy">jlio_gallery_item_transition</custom-field>
+  <custom-field action="copy">jlio_galery_image_gallery</custom-field>
+ </custom-fields>
+ 
+ 
+ <admin-texts>
+  <key name="seo_keyword" />
+  <key name="seo_description" />
+  <key name="archive_title_lang" />
+  <key name="not_found_lang" />
+  <key name="page_title_lang" />
+  <key name="search" />
+  <key name="search_for_lang" />
+  <key name="share_on_twitter_lang" />
+  <key name="share_on_facebook_lang" />
+  <key name="email_from_name" />
+  <key name="email_subject" />
+  <key name="email_footer_text" />
+  <key name="email_body_text" />
+  <key name="blog_layout" />
+  <key name="blog_sidebar" />
+  <key name="blog_exclude" />
+ </admin-texts>
+</wpml-config>

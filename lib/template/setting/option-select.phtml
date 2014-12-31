@@ -1,0 +1,19 @@
+<div class="setting-option">	
+	<h4 class="setting-title"><?php echo $title ?>:</h4>
+	<select id="<?php echo $id; ?>" name="<?php echo $id; ?>">
+		<?php foreach ($option as $key => $val) : ?>
+		<?php $choose = ( $value == $key ) ? "selected='selected'" : ''; ?>
+		<option value="<?php echo $key; ?>"  <?php echo $choose ?> ><?php echo $val; ?></option>
+		<?php endforeach; ?>		
+	</select>
+	<span class="meta-description"><?php echo $description; ?></span>
+	
+	<?php if(isset($help)) : ?>
+	<div class="moreinfo" title="More Info">&nbsp;</div>
+	<div class="help">
+		<div class="help-wrapper">
+			<?php echo $help; ?>
+		</div>
+	</div>
+	<?php endif; ?>
+</div>

@@ -1,0 +1,39 @@
+<?php 
+	if(!function_exists('j_get_id_array')) {
+				
+		function j_get_id_array($value) {
+			$res = array();
+			
+			if(!empty($value)) {
+				foreach ($value as $key => $val) {
+					$res[] = $val->ID;
+				}
+			}
+			return $res;
+		}
+	}
+?>
+<div class="setting-wrapper">
+	<div class="setting-option frontslider">	
+		<h4 class="setting-title"><?php echo $title ?> :</h4>	
+		<div class="arrange_slider">
+			<ul>
+				<?php
+					if(!empty($value)) : 
+						foreach($value as $val) : 
+				?>
+				<li class="frontslideritem" data-id="<?php echo $val->ID;?>">					
+					<div class="frontslidertext">
+						<span class="frontslidertitle"><?php echo $val->post_title;?></span>
+					</div>
+				</li>
+				<?php 
+						endforeach; 
+					endif;
+				?>
+			</ul>
+		</div>
+		<input type="hidden" class="frontslideresult" name="<?php echo $id; ?>" id="<?php echo $id; ?>" value='<?php echo json_encode(j_get_id_array($value)); ?>' />
+	</div>
+</div>
+

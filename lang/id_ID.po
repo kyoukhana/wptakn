@@ -1,0 +1,297 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jegtheme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-18 14:01+0800\n"
+"PO-Revision-Date: 2012-08-24 16:36+0800\n"
+"Last-Translator: Agung Bayu Iswara <agungbayuiswara@gmail.com>\n"
+"Language-Team: jegbagus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;j__;j_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../functions\n"
+"X-Poedit-SearchPath-2: ../includes\n"
+
+#: ../404.php:18
+msgid "404_lang"
+msgstr "Halaman yang anda cari tidak tersedia, silahkan ulangi lagi"
+
+#: ../404.php:35
+msgid "disableclick"
+msgstr "Click kanan di tiadakan"
+
+#: ../archive.php:16
+msgid "tag_archive_for_lang"
+msgstr "Berkas tag untuk : <b>%s</b>"
+
+#: ../archive.php:18
+msgid "post_filled_under_lang"
+msgstr "Post berada pada : <b>%s</b>"
+
+#: ../archive.php:20
+msgid "post_written_by_lang"
+msgstr "Post ditulis oleh : <b>%s</b>"
+
+#: ../archive.php:22
+msgid "date_archive_lang"
+msgstr "%s - Berkas"
+
+#: ../comments.php:6
+msgid "comment_password_protected_lang"
+msgstr "comment_password_protected_lang"
+
+#: ../comments.php:19
+msgid "name_lang"
+msgstr "Nama"
+
+#: ../comments.php:30
+msgid "no_comment_lang"
+msgstr "Komentar tidak tersedia"
+
+#: ../comments.php:30
+msgid "one_comment_lang"
+msgstr "1 Komentar"
+
+#: ../comments.php:30
+msgid "more_comment_lang"
+msgstr "% Komentar"
+
+#: ../comments.php:55
+msgid "login_comment_lang"
+msgstr "<p>Silahkan login untuk meninggalkan komentar.</p>"
+
+#: ../header.php:115
+msgid "navigate_lang"
+msgstr "Navigasi  ..."
+
+#: ../search.php:12
+msgid "search_for_lang"
+msgstr "Pencarian untuk : <b>%s</b>"
+
+#: ../searchform.php:8
+msgid "Search"
+msgstr "Cari"
+
+#: ../single-portfolio.php:11
+msgid "no_post_available_lang"
+msgstr "Post tidak tersedia"
+
+#: ../functions/comments-function.php:27
+msgid "comment_moderation_lang"
+msgstr "<em>Komentar anda sedang menunggu moderasi</em>"
+
+#: ../functions/common-function.php:9
+msgid "tag_archive_title_lang"
+msgstr "Berkas tag untuk &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:11
+msgid "post_filled_title_lang"
+msgstr "Post terdapat pada &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:13
+msgid "post_written_title_lang"
+msgstr "Post di tulis oleh &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:16
+msgid "archive_title_lang"
+msgstr " berkas "
+
+#: ../functions/common-function.php:18
+msgid "search_for_title_lang"
+msgstr "Pencarian untuk &quot;%s&quot; %s "
+
+#: ../functions/common-function.php:25
+msgid "not_found_lang"
+msgstr "Tidak ditemukan"
+
+#: ../functions/common-function.php:30
+msgid "page_title_lang"
+msgstr " Halaman "
+
+#: ../functions/common-function.php:258
+msgid "read_more_lang"
+msgstr "Baca selanjutnya .."
+
+#: ../functions/common-function.php:305
+msgid "page_of_lang"
+msgstr "Halaman %d of %d"
+
+#: ../functions/like-function.php:94
+msgid "parameter_not_complete_lang"
+msgstr "Parameter tidak lengkap"
+
+#: ../functions/like-function.php:100
+msgid "have_voted_lang"
+msgstr "Sudah melakukan vote"
+
+#: ../functions/like-function.php:106
+msgid "db_error_lang"
+msgstr "Internal DB Error"
+
+#: ../functions/like-function.php:112
+#: ../includes/portfolio-item.php:67
+msgid "thanks_vote_lang"
+msgstr "Terima kasih untuk vote anda!"
+
+#: ../includes/contact-template.php:31
+msgid "contact_us_lang"
+msgstr "Hubungi Kami"
+
+#: ../includes/contact-template.php:34
+msgid "contact_detail_lang"
+msgstr "Kontak Detail"
+
+#: ../includes/contact-template.php:48
+msgid "click_view_map"
+msgstr "Klik untuk melihat detail map"
+
+#: ../includes/contact-template.php:54
+msgid "contact_form_lang"
+msgstr "Form Kontak"
+
+#: ../includes/contact-template.php:61
+msgid "your_email_lang"
+msgstr "Email Anda"
+
+#: ../includes/contact-template.php:65
+msgid "contact_message"
+msgstr "Pesan"
+
+#: ../includes/contact-template.php:69
+msgid "contact_send"
+msgstr "Kirim pesan"
+
+#: ../includes/contact-template.php:87
+msgid "contact_location_lang"
+msgstr "Lokasi kami"
+
+#: ../includes/contact-template.php:159
+msgid "cantgetdirection_lang"
+msgstr "Tidak dapat mendapatkan arah . . . "
+
+#: ../includes/contact-template.php:160
+msgid "dummyposition_lang"
+msgstr "Tidak berhasil mendapatkan arah, mengunakan arah dummy . . . "
+
+#: ../includes/contact-template.php:161
+msgid "geonotsupport_lang"
+msgstr "Browser anda tidak mendukung Geolocation. . ."
+
+#: ../includes/contact-template.php:162
+msgid "entername_lang"
+msgstr "Masukkan nama anda"
+
+#: ../includes/contact-template.php:163
+msgid "nameminlength_lang"
+msgstr "Paling tidak terdapat {0} karakter"
+
+#: ../includes/contact-template.php:164
+msgid "enteremail_lang"
+msgstr "Masukkan email anda"
+
+#: ../includes/contact-template.php:165
+msgid "validemail_lang"
+msgstr "Silahkan masukkan email valid anda"
+
+#: ../includes/contact-template.php:166
+msgid "entermessage_lang"
+msgstr "Silahkan masukkan pesan"
+
+#: ../includes/contact-template.php:167
+msgid "messageminlength_lang"
+msgstr "Paling tidak terdapat {0} karakter"
+
+#: ../includes/contact-template.php:168
+msgid "sendmessage_lang"
+msgstr "Kirim pesan . . ."
+
+#: ../includes/contact-template.php:169
+msgid "messagesent_lang"
+msgstr "Pesan terkirim . . . "
+
+#: ../includes/contact-template.php:170
+msgid "failsentmessage"
+msgstr "Gagal mengirimkan pesan . . . "
+
+#: ../includes/front-template.php:99
+msgid "more_detail"
+msgstr "Lebih detail"
+
+#: ../includes/portfolio-item.php:67
+msgid "likethis_lang"
+msgstr "Suka"
+
+#: ../includes/portfolio-single-item.php:67
+msgid "click_to_zoom_lang"
+msgstr "Click untuk memperbesar"
+
+#: ../includes/portfolio-single-item.php:111
+#: ../includes/portfolio-single-item.php:125
+msgid "no_playback_lang"
+msgstr "Tidak terdapat dukungan untuk video"
+
+#: ../includes/portfolio-single-item.php:136
+msgid "more_in_portfolio_lang"
+msgstr "Portfoio lainnya"
+
+#: ../includes/portfolio-single-item.php:138
+msgid "previous_lang"
+msgstr "Sebelumnya"
+
+#: ../includes/portfolio-single-item.php:139
+msgid "next_lang"
+msgstr "Selanjutnya"
+
+#: ../includes/portfolio-template.php:84
+msgid "protected_portfolio_lang"
+msgstr "Portfolio yang dilindungi"
+
+#: ../includes/portfolio-template.php:85
+msgid "password_placeholder_lang"
+msgstr "Kata sandi"
+
+#: ../includes/portfolio-template.php:86
+msgid "portfolio_submit_lang"
+msgstr "Kirim"
+
+#: ../includes/post-template.php:64
+msgid "filled_under_lang"
+msgstr "<p>Berada didalam :  %s </p>"
+
+#: ../includes/post-template.php:93
+msgid "share_on_facebook_lang"
+msgstr "Bagikan ke facebook"
+
+#: ../includes/post-template.php:96
+msgid "share_on_twitter_lang"
+msgstr "Bagikan ke  twitter"
+
+#~ msgid "leave_comment_lang"
+#~ msgstr "Leave Comment"
+
+#~ msgid "website_lang"
+#~ msgstr "Website"
+
+#~ msgid "login_as_lang"
+#~ msgstr "Login as  <b>%s</b> , <a href=\"%s\">Not you? Logout. </a>"
+
+#~ msgid "comment_lang"
+#~ msgstr "Comment"
+
+#~ msgid "send_comment_lang"
+#~ msgstr "Send Comment"
+
+#~ msgid "share_on_digg_lang"
+#~ msgstr "Share on Digg"
+
+#~ msgid "email_friend_lang"
+#~ msgstr "Email your friend"
+
+#~ msgid "page_lang"
+#~ msgstr "Page %d of %d"
+
+#~ msgid "page"
+#~ msgstr " Page "

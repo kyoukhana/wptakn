@@ -1,0 +1,56 @@
+<?php if(isset($savemsg)) : ?>
+<div class="alert alert-info savedinfo">
+	<strong>Setting Saved</strong> 	 
+</div>
+<?php endif; ?>
+<?php 
+	if(isset($_REQUEST['activated']) && $_REQUEST['activated'] == 'true'): 
+?>
+<div class="alert alert-info installinfo">
+	<p><strong>Themes installation is complete!</strong></p>
+	<p><strong>Thank you</strong>, for choosing this themes. For more information, please read
+	documentation that include with this package.</p> 
+	<p>And if you have question, feature request, or found something wrong with this theme
+	Please use <a href="http://jegtheme.com/forum/">our support forum</a>. </p> 
+</div>
+<?php endif; ?>
+<form id="jeg-setting-form" method="post">
+	
+	<?php echo j_create_setting_nonce(); ?>
+	
+	<div class="jad">
+		<div class="jad-header">
+			<div class="jad-header-title"><?php echo $themename . ' v' . $version; ?></div>
+			
+			
+			<?php if(j_get_option('header_ads', 1)) : ?>
+			<div class="jad-ads"> 
+				<a target="_blank" href="http://jegtheme.com/ads/index.html">
+					<img src="http://jegtheme.com/ads/banner.jpg"/>
+				</a>
+			</div>
+			<?php endif; ?>
+		</div>
+		<div class="jad-body">
+			
+			<!-- Body Content -->
+			<?php echo $bodycontent; ?>
+			
+			<!-- Content Navigation -->		
+			<div class="jad-body-navi">
+				<ul>
+					<li>&nbsp;</li>
+					<?php echo $navi; ?>
+				</ul>
+			</div>
+			
+			<div class="jad-body-clear"></div>
+		</div>
+		<div class="jad-foot">
+			<div class="jad-submit">
+				<input type="hidden" value="true" name="submit"/>
+				<input class="btn" type="submit" value="Save Setting">
+			</div>
+		</div>
+	</div>
+</form>

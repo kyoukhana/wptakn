@@ -1,0 +1,38 @@
+<div class="item-detail" data-cover='<?php echo $image_cover; ?>'>
+	<div class="item-gallery theme-default">
+		<?php if(!empty($download_url)) : ?>
+		<div class="item-download">
+			<a data-alt="<?php _e('Download'); ?>" href="<?php echo $download_url; ?>">
+				<div class="icon-download-alt">&nbsp;</div>
+			</a>
+		</div>
+		<?php endif; ?>			
+		<div class="video-vimeo-container" src="<?php echo $vimeo; ?>"></div>
+	</div>
+	<div class="item-description">
+		<div class="item-desc-wrapper">
+			<h2><?php echo $title; ?></h2>
+			
+			<?php 
+			if(j_get_option('social_sharer')) :
+				echo $socialblock;
+			endif; 
+			?>
+			
+			<span><?php echo implode(', ', $catlist)?></span>
+			<div class="wrapper-text"><?php echo $content; ?></div>				
+		</div>
+		<div class="item-navigator">
+			<a href="" data-tourl="false">
+				<div class="item-prev" title="<?php j_e('portfolio_prev', "Previous Portfolio")?>">
+					<div class="icon-chevron-left item-icon-prev">&nbsp;</div>
+				</div>
+			</a>
+			<a href="" data-tourl="false">
+				<div class="item-next" title="<?php j_e('portfolio_next', "Next Portfolio")?>">			
+					<div class="icon-chevron-right item-icon-next">&nbsp;</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>

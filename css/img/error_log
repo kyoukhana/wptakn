@@ -1,0 +1,5 @@
+[22-Feb-2014 20:10:17] PHP Fatal error:  Call to undefined function  j_get_option() in /home4/freak/public_html/wp-content/themes/jphotolio_v453/css/img/footer.php on line 13
+[19-Jul-2014 21:10:35 America/Chicago] PHP Fatal error:  Call to undefined function j_get_option() in /home4/freak/public_html/wp-content/themes/jphotolio_v453/css/img/footer.php on line 13
+[13-Sep-2014 13:55:19 America/Chicago] PHP Fatal error:  Call to undefined function j_get_option() in /home4/freak/public_html/wp-content/themes/jphotolio_v453/css/img/footer.php on line 13
+[07-Nov-2014 22:24:43 America/Chicago] PHP Fatal error:  Call to undefined function j_get_option() in /home4/freak/public_html/wp-content/themes/jphotolio_v453/css/img/footer.php on line 13
+[25-Dec-2014 15:47:24 America/Chicago] PHP Fatal error:  Call to undefined function j_get_option() in /home4/freak/public_html/wp-content/themes/jphotolio_v453/css/img/footer.php on line 13

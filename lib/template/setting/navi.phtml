@@ -1,0 +1,5 @@
+<?php 
+for($i = 0; $i < count($setting) ; $i++) :		
+	$active = ( $navistate->active == $i ) ? "active" : "";			
+	echo "<li class='navi $active {$setting[$i]["class"]}'>{$setting[$i]["title"]}</li>";
+endfor;
