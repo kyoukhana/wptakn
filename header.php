@@ -59,7 +59,9 @@
  	<?php endif; ?>
  	<?php if(j_get_option('touch_icon')) : ?> 	
  	<link rel="apple-touch-icon-precomposed" href="<?php echo j_get_option('touch_icon'); ?>">
- 	<?php endif; ?>   
+ 	<?php endif; ?>
+
+
  	
   	<!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
@@ -75,7 +77,9 @@
   	</script>  	
   	<?php wp_head(); ?>
 
-    <a link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/css/custom.css"  />
+
+    <link link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/css/custom.css"  />
+    
 
 </head>
 <body <?php body_class(); ?>>
