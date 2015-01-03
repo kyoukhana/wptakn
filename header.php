@@ -74,6 +74,9 @@
 			curtainstyle = "<?php echo j_get_option('curtain_effect', 'slide');?>";	
   	</script>  	
   	<?php wp_head(); ?>
+
+    <a link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/custom.css" media='all' />
+
 </head>
 <body <?php body_class(); ?>>
 
