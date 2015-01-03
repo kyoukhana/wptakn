@@ -75,7 +75,7 @@
   	</script>  	
   	<?php wp_head(); ?>
 
-    <a link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/custom.css" media='all' />
+    <a link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/css/custom.css" media='all' />
 
 </head>
 <body <?php body_class(); ?>>
