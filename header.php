@@ -5,7 +5,7 @@
 <!--[if IE 9]>    <html class="no-js lt-ie10" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-  	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+  	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>" charset=<?php bloginfo('charset'); ?>" />
 
     <?php
     $postid = $wp_query->post->ID;
@@ -75,7 +75,7 @@
   	</script>  	
   	<?php wp_head(); ?>
 
-    <a link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/css/custom.css" media='all' />
+    <a link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/css/custom.css"  />
 
 </head>
 <body <?php body_class(); ?>>
