@@ -1,7 +1,7 @@
-<?php 
-	
+<?php
+
 	global $post;
-	
+
 
 ?>
 
@@ -18,8 +18,8 @@
 		<div class="contact_form_inner">
 			<h1><?php j_e('contact_us_lang'); ?></h1>
 			<div class="contact_content">
-				<div class="contact_left">	
-					<h2><?php j_e('contact_detail_lang'); ?></h2>	
+				<div class="contact_left">
+					<h2><?php j_e('contact_detail_lang'); ?></h2>
 					<div class="contact_note">
                         <img class="aligncenter size-medium wp-image-1026" alt="DSC08952_mini" src="http://www.takenbymarc.com/wp-content/uploads/2014/01/DSC08952_mini-300x200.jpg" width="300" height="200" />
 					</div>
@@ -160,21 +160,21 @@ jQuery(document).ready(function($)
 
 			var hh = $("header").height();
 			var fh = $("footer").height();
-			
+
 			ch = wh - hh - fh + 5;
-			$(selector).height(ch);	
+			$(selector).height(ch);
 		});
 
 		$(window).resize();
 	}
-	
+
 	resize_window("#contact_canvas");
 
 	/** bind jeg default **/
 	$(window).jegdefault({
 		curtain : <?php echo j_get_option('curtain', 0);?>,
 		rightclick 	: <?php echo j_get_option('rightclick', 1);?>,
-		clickmsg	: "<?php echo j_e('disableclick', 'Right click disabled'); ?>" 
+		clickmsg	: "<?php echo j_e('disableclick', 'Right click disabled'); ?>"
 	});
 
 	var jegcontact = $("#contact_block").jegcontact({
@@ -195,11 +195,11 @@ jQuery(document).ready(function($)
 		showmapfirst		: "<?php echo j_get_option("show_contact_map", 0); ?>",
 		usemap				: "<?php echo $usemap ?>"
 	});
-	
+
 	/* remove binding element */
 	$("#main").bind('remove', function(ev){
 		if (ev.target === this) {
-			
+
 		}
 	});
 });

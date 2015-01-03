@@ -26,7 +26,7 @@ function jeg_comment($comment, $args, $depth) {
 					if($comment->comment_approved == '0') :
 						j_e('comment_moderation_lang');
 					endif; 
-					echo '<p>' . get_comment_text() . '</p>';
+					echo '<p>' . comment_text() . '</p>';
 				?>				
 			</div>
 			<div style="clear: both;"></div>

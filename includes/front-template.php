@@ -135,34 +135,33 @@
 	 </div>
 </div>
 
-<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jegbg.js';?>"></script>
+<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jegbg.full.js';?>"></script>
 <script type="text/javascript">
 	
 	(function($){
 		$(document).ready(function(){
-            function resize_window(selector)
-            {
-                $(window).resize(function(){
-                    var wh = $(window).height();
-
-                    //var hh = $("header").height();
-                    var fh = $("footer").height();
-
-                    var hh =0;
-
-                    ch = wh - hh - fh + 7; /* 3 itu margin top nya yang diatas */
-
-                    if(!scw(iphonewidth)) {
-                        ch = 275;
-                    } else if(!scw(mediaquerywidth)) {
-                        ch = 450;
-                    }
-
-                    $(selector).height(ch);
-                });
-
-                $(window).resize();
-            }
+			function resize_window(selector) 
+			{
+				$(window).resize(function(){
+					var wh = $(window).height();
+			
+					/*Make slider full screen height */
+                    var hh = 0;
+					var fh = $("footer").height();
+	
+					ch = wh - hh - fh + 7; /* 3 itu margin top nya yang diatas */
+					
+					if(!scw(iphonewidth)) {
+						ch = 275;				
+					} else if(!scw(mediaquerywidth)) {
+						ch = 450;
+					}
+					
+					$(selector).height(ch);	
+				});
+			
+				$(window).resize();
+			}
 			
 			resize_window("#jegbgcontainer");		
 	
@@ -176,25 +175,25 @@
 			var content = <?php echo $jsContent; ?> ;
 	
 			var holddesc = undefined;
-			
-			var jegbg = $("#jegbgcontainer").jegbg({
-				fade_speed					: 700,
-				delay						: <?php echo j_get_meta('frontslider_delay', 10000) ?>,			
-				content 					: content,
-				autostart					: true,
-				partial_load				: true
-			},  function(ele, media){
-				<?php if(!j_get_meta('front_slider_info_hide', false)) : ?>
-				$('#homepita').fadeIn(1000);				
-				$('#homepita .torapper').html(ele.title);		
-				$(".homelink a").attr("href" , ele.link);
-				holddesc = ele.desc;
-	
-				if(!$(".homeinfo").is(":visible")) {
-					pitaSlideUp();
-				}
-				<?php endif; ?>
-			});
+
+            var jegbg = $("#jegbgcontainer").jegbg({
+                fade_speed					: 700,
+                delay						: <?php echo j_get_meta('frontslider_delay', 10000) ?>,
+                content 					: content,
+                autostart					: true,
+                partial_load				: true
+            },  function(ele, media){
+                <?php if(!j_get_meta('front_slider_info_hide', false)) : ?>
+                $('#homepita').fadeIn(1000);
+                $('#homepita .torapper').html(ele.title);
+                $(".homelink a").attr("href" , ele.link);
+                holddesc = ele.desc;
+
+                if(!$(".homeinfo").is(":visible")) {
+                    pitaSlideUp();
+                }
+                <?php endif; ?>
+            });
 	
 			/* binding touchwipe, disable this feature if using iphone */
 			if(scw(iphonewidth)) {

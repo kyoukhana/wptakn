@@ -14,17 +14,40 @@ $categories = get_terms(JEG_PORTFOLIO_CATEGORY, array(
 	#jeglio .item {
 		width : <?php echo $jdata->portoItemWidth . 'px'?>;
 	}
-	
+
 	<?php if(!j_get_meta('portfolio_image_caption', 0 , $jdata->postid)) : ?>
-	.flex-control-nav {
-  		bottom: 7px;  
-	}
-	
-	.item-description-wrapper {
-		display: none;
-	}
+    .fotorama__caption {
+        display: none !important;
+    }
+    .item-gallery .fotorama__nav-wrap {
+        bottom: 0;
+    }
 	<?php endif; ?>
-	
+
+
+
+
+    <?php if(j_get_option('direction_nav', 0) == 0) { ?>
+    .fotorama__arr {
+        display: none !important;
+    }
+    <?php } ?>
+
+    <?php if(j_get_option('control_nav', 1) == 0) { ?>
+    .fotorama__nav-wrap {
+        display: none !important;
+    }
+    <?php } ?>
+
+    <?php if(!j_get_meta('portfolio_image_caption', 0 , $jdata->postid)) : ?>
+    .flex-control-nav {
+        bottom: 7px;
+    }
+
+    .item-description-wrapper {
+        display: none;
+    }
+    <?php endif; ?>
 </style>
 
 <?php if($jdata->showFilter) : ?>
@@ -85,7 +108,7 @@ if(have_posts()) {
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeglio.js';?>"></script>
+<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeglio.full.js';?>"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($)
 	{
@@ -97,6 +120,7 @@ if(have_posts()) {
 		});
 		
 		$("#jeglio").jeglio({
+            expand_script       : <?php echo j_get_option('portfolio_expand_script', 1); ?>,
 			postid				: <?php echo $jdata->postid; ?>,
 			itemWidth 			: "<?php echo $jdata->portoItemWidth; ?>",
 			itemHeight 			: "<?php echo $jdata->portoItemHeight + 60; ?>",
@@ -106,6 +130,7 @@ if(have_posts()) {
 			descDim				: "<?php echo $jdata->descriptionDim; ?>",
 			loadAnimation		: "<?php echo $jdata->itemTransition; ?>",	
 			theatherMode		:  <?php echo $jdata->theatherMode; ?>,
+			fullimage           :  <?php  echo j_get_meta('porto_gallery_crop', 0 , $jdata->postid) ?>,
 			flexDelay			:  <?php echo j_get_option('flex_slide_speed', '7000'); ?>,
 			zoomDelay			:  <?php echo j_get_option('zoom_slide_speed', '7000'); ?>,
 			direction_nav		:  <?php echo j_get_option('direction_nav', 0); ?>,

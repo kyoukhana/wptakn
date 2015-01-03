@@ -88,24 +88,38 @@
 									'post_parent' 		=> get_the_ID(), 
 									'post_type' 		=> 'attachment', 
 									'post_mime_type' 	=>'image'
-							));
+							)
+                        );
 						foreach ($galleries as $gallery) {
 							$galleryMedia[] = array('file' => $gallery->guid, 'desc'=> get_post_meta($gallery->ID, '_wp_attachment_image_alt', true));
-						}
-				  	}				  					  	
+                        }
+                    }
 			?>
-			<div class="gallery-main span9 flexslider" data-type="gallery">
-				<ul class="slides">
-					<?php foreach ($galleryMedia as $img) : ?>
-					<li>
-						<a data-alt="<?php j_e('click_to_zoom_lang'); ?>" class="item-gallery-image" href="#" data-title="<?php echo $img['title'] ?>" data="<?php echo $img['file'] ?>" data-tourl="false">
-							<img title="<?php echo $img['title']; ?>" alt="<?php echo $img['title']; ?>" src="<?php echo jeg_get_image($img['file'], '', $width, $height); ?>" />	                
-						</a>						
-					</li>
-					<?php endforeach; ?>
-				</ul>
-			</div>
-			
+
+                <?php if(j_get_option('portfolio_expand_script', 1) == 0) { ?>
+
+                    <div class="item-gallery gallery-main span9 flexslider newfotorama" data-type="gallery">
+                        <?php foreach ($galleryMedia as $img) : ?>
+                        <img src="<?php echo $img['file']; ?>" />
+                        <?php endforeach; ?>
+                    </div>
+
+                <?php } else { ?>
+
+                    <div class="gallery-main span9 flexslider newflexslider" data-type="gallery">
+                        <ul class="slides">
+                            <?php foreach ($galleryMedia as $img) : ?>
+                                <li>
+                                    <a data-alt="<?php j_e('click_to_zoom_lang'); ?>" class="item-gallery-image" href="#" data-title="<?php echo $img['title'] ?>" data="<?php echo $img['file'] ?>" data-tourl="false">
+                                        <img title="<?php echo $img['title']; ?>" alt="<?php echo $img['title']; ?>" src="<?php echo jeg_get_image($img['file'], '', $width, $height); ?>" />
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
+                <?php } ?>
+
 			<?php } else if($mediatype == "youtube") { 
 				$youtube	= j_get_meta('porto_youtube_url', '', get_the_ID()); 
 			?>
@@ -264,7 +278,7 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeggallery.js';?>"></script>
+<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeggallery.full.js';?>"></script>
 <script type="text/javascript">
 setTimeout(function(){
 	jQuery(document).ready(function($)
@@ -279,6 +293,7 @@ setTimeout(function(){
 		$("body").jegfolio({
 			direction_nav	:  <?php echo j_get_option('direction_nav', 0); ?>,
 			control_nav		:  <?php echo j_get_option('control_nav', 1); ?>,
+            expand_script   : <?php echo j_get_option('portfolio_expand_script', 1); ?>
 		});
 	});
 }, 200);

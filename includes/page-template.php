@@ -56,7 +56,7 @@ switch (Jeg_Sidebar::get_sidebar($jdata->blogLayout)) {
 </div>
 <div class="page-bottom-spacer"></div>
 
-<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeggallery.js';?>"></script>
+<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeggallery.full.js';?>"></script>
 <script type="text/javascript">
 jQuery(document).ready(function($){
 	/** bind jeg default **/

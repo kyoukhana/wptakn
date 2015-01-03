@@ -3,7 +3,7 @@
 <!-- Disini masukin data nya -->
 </div>
 <div class="lio-loader"></div>
-<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeggal.js';?>"></script>
+<script type="text/javascript" src="<?php echo JEG_JS_URL . 'jeggal.full.js';?>"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($)
 	{

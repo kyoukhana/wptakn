@@ -2253,6 +2253,12 @@ div.ibutton-label-off span {
   cursor: move;
 }
 
+.imageresult-list:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .imageresult-header-thumb {
   float: left;
   margin: 2px;
