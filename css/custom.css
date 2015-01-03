@@ -1,0 +1,140 @@
+.page-id-22 {
+    margin-top: 0px !important
+}
+
+.homeinfo {
+    display: none !important;
+}
+
+header {
+    background-image: none;
+    background-color: #000
+}
+
+footer {
+    background-image: none;
+    background-color: #000
+}
+
+/*Background Image*/
+body {
+    background-image: none;
+    background-color: #000
+}
+
+body {
+    /*background: url(/wp-content/uploads/2014/01/vintagewallpaper4.jpg) no-repeat center center fixed; */
+    background-image: none;
+
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        margin-top: 130px;
+    }
+
+    header {
+        position: fixed;
+    }
+
+    #contact_block .contact_form {
+        height: 600px;
+    }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+    header {
+        position: relative;
+    }
+
+    #contact_block .contact_form {
+        height: 1000px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header div.logo {
+        left: 0%;
+        margin-left: 0px;
+    }
+
+    #contact_block .contact_form {
+        height: 1000px;
+    }
+}
+
+#ninja_forms_form_2 label {
+    float: left;
+    width: 100px;
+}
+
+#ninja_forms_form_3 input[type=text], #ninja_forms_form_2 input[type=text] {
+    width: 61%;
+!important;
+}
+
+.lrgeBox {
+    width: 61% !important;
+    height: 20%
+}
+
+#jeglio {
+    margin-top: 40px;
+}
+
+.ninja-forms-field {
+    width: 60%
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        margin-top: 0px;
+    }
+
+    header {
+        position: fixed;
+    }
+}
+
+#text-2 .inner-container {
+    display: none
+}
+
+.page-id-22 .pagemetawrapper {
+    margin-top: 15px
+}
+
+.blog-side-width, .sidebar, .blog-full-width {
+    margin-top: 80px;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        margin-top: 00px;
+    }
+}
+
+#liofilter, #jeggal {
+    margin: 116px auto 0px;
+}
+
+.ps-caption-content {
+    display: none
+}
+
+/*Firefox fix */
+.size-full {
+    width: 100%;
+}
+
+#contact_block {
+    overflow: visible
+}
+
+#ninja_forms_required_items {
+    margin-bottom: 5px !important;
+}
+

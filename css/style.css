@@ -1,3 +1,6 @@
+
+@import url("custom.css");
+
 html{font-size:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%}
 
 body{background-color:#FAFAFA; background-image:url("img/bodypattern.png"); overflow-x:hidden; height:100%:}
